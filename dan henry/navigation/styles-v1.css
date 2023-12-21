@@ -31,7 +31,9 @@
 }
 
 .dh-nav-test .thumbnail-nav,
-.dh-nav-test .thumbnail-nav__sublist.thumbnail-nav__items {
+.dh-nav-test .thumbnail-nav__sublist.thumbnail-nav__items,
+.dh-nav-test .slideBack_bg,
+.dh-nav-test .slide_bg {
   background: #fff;
 }
 
