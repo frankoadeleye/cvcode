@@ -3,7 +3,7 @@
 }
 
 .dh-nav-test .site-nav--has-dropdown > a.site-nav__link,
-li > a.site-nav__link--external.site-nav__link {
+.dh-nav-test li > a.site-nav__link--external.site-nav__link {
   color: #000;
 }
 
