@@ -1,0 +1,54 @@
+.dh-primary-color-test .header__title > h1,
+.dh-primary-color-test .button.button--outline,
+.dh-primary-color-test .button.button--outline,
+.dh-primary-color-test .btn.button--outline,
+.dh-primary-color-test .collection__item .item__price > a,
+.dh-primary-color-test .header__title > h2,
+.dh-primary-color-test .article__item .article__footer > .article__read-more,
+.dh-primary-color-test .site-nav > li > .site-nav__link:hover,
+.dh-primary-color-test .site-nav > li > .site-nav__link:focus {
+  color: #c3a07d;
+}
+
+.dh-primary-color-test .site-nav {
+  border-top: 1px solid #c3a07d !important;
+}
+
+.dh-primary-color-test .button.button--outline,
+.dh-primary-color-test .button.button--outline,
+.dh-primary-color-test .btn.button--outline {
+  border: 1px solid #c3a07d !important;
+}
+
+.dh-primary-color-test .homepage-press-reviews > h2 {
+  border-bottom: 1px solid #c3a07d;
+}
+
+.dh-primary-color-test
+  #footer-newsletter-section
+  .activecampaign
+  ._inline-form
+  ._button-wrapper
+  ._submit {
+  border: 1px solid #c3a07d !important;
+  background: #c3a07d !important;
+}
+
+.dh-primary-color-test .site-promo,
+.dh-primary-color-test .button.button--outline:hover,
+.dh-primary-color-test button.button--outline:focus,
+.dh-primary-color-test .button.button--outline:hover,
+.dh-primary-color-test .button.button--outline:focus,
+.dh-primary-color-test .btn.button--outline:hover,
+.dh-primary-color-test .btn.button--outline:focus,
+.dh-primary-color-test .site-nav .site-nav__dropdown .site-nav__link:after {
+  background: #c3a07d !important;
+}
+
+.dh-primary-color-test
+  .site-nav
+  .site-nav__dropdown
+  .site-nav__link.item--active,
+.dh-primary-color-test .site-nav .site-nav__dropdown .site-nav__link:hover {
+  color: #c3a07d;
+}

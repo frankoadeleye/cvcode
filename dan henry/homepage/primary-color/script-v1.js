@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "clientName-testNo-test",
+    className: "dh-watches-homepage-color-v1-test",
     debug: 0,
     testName: "test",
     testVersion: "0.0.1",
@@ -45,8 +45,8 @@
            * Instead of jQuery or $ please use convert.$
            */
         };
-        if (!convert.$("body").hasClass(testInfo.testName)) {
-          convert.$("body").addClass(testInfo.testName);
+        if (!convert.$("body").hasClass("dh-primary-color-test")) {
+          convert.$("body").addClass("dh-primary-color-test");
           loadTest();
         }
       });
