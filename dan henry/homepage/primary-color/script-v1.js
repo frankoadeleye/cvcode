@@ -1,18 +1,18 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "dhHenryWatches-homepage-primaryColor-v1-test",
+    className: "dh-testno-test",
     debug: 0,
     testName: "test",
     testVersion: "0.0.1",
   };
-  const convertInterval = setInterval(() => {
-    if (typeof convert != "undefined") {
-      clearInterval(convertInterval);
-      convert.$(document).ready(() => {
+  const jQueryInterval = setInterval(() => {
+    if (typeof jQuery != "undefined") {
+      clearInterval(jQueryInterval);
+      jQuery(document).ready(() => {
         const classAllocation = (selector) => {
-          convert.$(selector).each((i, ele) => {
-            convert.$(ele).addClass(`section-${i}`);
+          jQuery(selector).each((i, ele) => {
+            jQuery(ele).addClass(`section-${i}`);
           });
         };
         const waitForElement = (selector) => {
@@ -40,13 +40,10 @@
           });
         };
         const loadTest = () => {
-          //Please write your jQuery code
-          /**
-           * Instead of jQuery or $ please use convert.$
-           */
+          //Code goes here
         };
-        if (!convert.$("body").hasClass("dh-primary-color-test")) {
-          convert.$("body").addClass("dh-primary-color-test");
+        if (!jQuery("body").hasClass("dh-nav-test")) {
+          jQuery("body").addClass("dh-nav-test");
           loadTest();
         }
       });

@@ -1,18 +1,18 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "dhHenryWatches-navigation-v1-test",
+    className: "dh-testno-test",
     debug: 0,
     testName: "test",
     testVersion: "0.0.1",
   };
-  const convertInterval = setInterval(() => {
-    if (typeof convert != "undefined") {
-      clearInterval(convertInterval);
-      convert.$(document).ready(() => {
+  const jQueryInterval = setInterval(() => {
+    if (typeof jQuery != "undefined") {
+      clearInterval(jQueryInterval);
+      jQuery(document).ready(() => {
         const classAllocation = (selector) => {
-          convert.$(selector).each((i, ele) => {
-            convert.$(ele).addClass(`section-${i}`);
+          jQuery(selector).each((i, ele) => {
+            jQuery(ele).addClass(`section-${i}`);
           });
         };
         const waitForElement = (selector) => {
@@ -40,13 +40,19 @@
           });
         };
         const loadTest = () => {
-          //Please write your jQuery code
-          /**
-           * Instead of jQuery or $ please use convert.$
-           */
+          $(document).ready(function () {
+            $(".site-header__logo-link").before(
+              '<img src="https://iili.io/JAdu9Tb.png" alt="variant-logo" class="variant-logo" />'
+            );
+            $(".site-header__logo-link").remove();
+
+            $(".ssw-auth-dropdown").html(
+              '<div class="action-icons-wrap"><a href="/account/login"><img src="https://iili.io/JAdFtne.png" alt="user-icon" /></a><a href="/apps/iwish"><img src="https://iili.io/JAdK3t1.png" alt="wishlist-icon" /></a><a href="/cart"><img src="https://iili.io/JAdK1Hl.png" alt="cart-icon" /></a></div>'
+            );
+          });
         };
-        if (!convert.$("body").hasClass("dh-nav-test")) {
-          convert.$("body").addClass("dh-nav-test");
+        if (!jQuery("body").hasClass("dh-nav-test")) {
+          jQuery("body").addClass("dh-nav-test");
           loadTest();
         }
       });
