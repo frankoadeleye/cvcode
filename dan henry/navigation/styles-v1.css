@@ -1,0 +1,46 @@
+.dh-nav-test .grid__item.one-whole {
+  background: #fff !important;
+}
+
+.dh-nav-test .site-nav--has-dropdown > a.site-nav__link,
+li > a.site-nav__link--external.site-nav__link {
+  color: #000;
+}
+
+.dh-nav-test .site-header__logo-link > .variant-logo {
+  width: 223px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.dh-nav-test .action-icons-wrap {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.dh-nav-test .action-icons-wrap > a {
+  width: 20px;
+  height: 20.5px;
+}
+
+.dh-nav-test .action-icons-wrap > a > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.dh-nav-test .thumbnail-nav,
+.dh-nav-test .thumbnail-nav__sublist.thumbnail-nav__items {
+  background: #fff;
+}
+
+.dh-nav-test
+  .thumbnail-nav__sublist.thumbnail-nav__items
+  > li.thumbnail-nav__item.thumbnail-nav__prod
+  > a
+  > .product-menu__preview-image
+  > .product-menu__details
+  > h4 {
+  color: #000;
+}

@@ -45,8 +45,8 @@
            * Instead of jQuery or $ please use convert.$
            */
         };
-        if (!convert.$("body").hasClass(testInfo.testName)) {
-          convert.$("body").addClass(testInfo.testName);
+        if (!convert.$("body").hasClass("dh-nav-test")) {
+          convert.$("body").addClass("dh-nav-test");
           loadTest();
         }
       });
