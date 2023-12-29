@@ -1,4 +1,7 @@
 /* applicable to scripts v1 and v2 */
+.happy-cus-test .page-width.for-happy-cus {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .happy-cus-test .page-width.for-happy-cus {
