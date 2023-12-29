@@ -6,19 +6,51 @@
     align-content: center;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .happy-cus-test .page-width.for-happy-cus > .section-header {
+    margin: 0;
   }
 
   .happy-cus-test .happy-customers {
     width: 100%;
     height: auto;
+    overflow: hidden;
+  }
+
+  .happy-cus-test .carousel-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  .happy-cus-test .carousel-container::-webkit-scrollbar {
+    display: none;
   }
 
   .happy-cus-test .happy-cus-carousel-item {
     width: 100%;
+    flex: 1 0 100%;
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    flex: 0 0 100%;
+  }
+
+  .happy-cus-test .happy-cus-carousel-item:nth-child(3) {
+    margin: 0;
   }
 
   .happy-cus-test .happy-cus-carousel-item-img {
@@ -66,6 +98,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .happy-cus-test .happy-cus-carousel-navigator > .left-arrow,
