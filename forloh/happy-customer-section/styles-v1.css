@@ -1,0 +1,73 @@
+.happy-cus-v1-test .page-width.for-happy-cus {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.happy-cus-v1-test .happy-customers {
+  width: 100%;
+  height: auto;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-item-img {
+  width: 150px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-item-title {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-paragraph {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-paragraph > span {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-navigator {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-navigator > span {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.happy-cus-v1-test .happy-cus-carousel-navigator > .left-arrow,
+.happy-cus-v1-test .happy-cus-carousel-navigator > .right-arrow {
+  width: 5px;
+  height: 8.673px;
+  cursor: pointer;
+}
