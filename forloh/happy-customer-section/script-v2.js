@@ -4,7 +4,7 @@
     className: "forloh-test",
     debug: 0,
     testName: "happy-customer-section",
-    testVersion: "0.0.1",
+    testVersion: "0.0.2",
   };
   const jQueryInterval = setInterval(() => {
     if (typeof jQuery != "undefined") {
@@ -41,7 +41,9 @@
         };
         const loadTest = () => {
           $(document).ready(function () {
-            $(".shopify-section.index-section.collection-list-sec").append(
+            $(
+              ".shopify-section.index-section#shopify-section-template--14560267829332__6ee2bd8f-59a8-4703-aa1c-0d335a33c500"
+            ).append(
               '<div class="happy-customers">' +
                 '<div class="page-width for-happy-cus">' +
                 '<div class="section-header">' +
