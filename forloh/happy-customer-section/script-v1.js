@@ -46,7 +46,7 @@
                 '<div class="page-width for-happy-cus">' +
                 '<div class="section-header">' +
                 '<h2 class="section-header__title">Over 3,800+ Happy Customers</h2>' +
-                '<a href="/" class="btn btn--secondary btn--small section-header__link">View all</a>' +
+                '<a href="/" class="btn btn--secondary btn--small section-header__link">Read Reviews</a>' +
                 "</div>" +
                 '<div class="carousel-container">' +
                 '<div class="happy-cus-carousel-item">' +

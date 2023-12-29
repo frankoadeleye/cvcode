@@ -60,6 +60,7 @@
     width: 150px;
     height: 200px;
     flex-shrink: 0;
+    margin-top: 10px;
   }
 
   .happy-cus-test .happy-cus-carousel-item-title {
