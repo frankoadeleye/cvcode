@@ -6,13 +6,13 @@
     testName: "happy-customer-section",
     testVersion: "0.0.2",
   };
-  const jQueryInterval = setInterval(() => {
-    if (typeof jQuery != "undefined") {
-      clearInterval(jQueryInterval);
-      jQuery(document).ready(() => {
+  const convertInterval = setInterval(() => {
+    if (typeof convert != "undefined") {
+      clearInterval(convertInterval);
+      convert.$(document).ready(() => {
         const classAllocation = (selector) => {
-          jQuery(selector).each((i, ele) => {
-            jQuery(ele).addClass(`section-${i}`);
+          convert.$(selector).each((i, ele) => {
+            convert.$(ele).addClass(`section-${i}`);
           });
         };
         const waitForElement = (selector) => {
@@ -142,8 +142,8 @@
             });
           });
         };
-        if (!jQuery("body").hasClass("happy-cus-test")) {
-          jQuery("body").addClass("happy-cus-test");
+        if (!convert.$("body").hasClass("happy-cus-test")) {
+          convert.$("body").addClass("happy-cus-test");
           loadTest();
         }
       });
