@@ -40,8 +40,8 @@
           });
         };
         const loadTest = () => {
-          $(document).ready(function () {
-            $(
+          convert.$(document).ready(function () {
+            convert.$(
               ".shopify-section.index-section.collection-list-sec"
             ).append(`<div class="happy-customers desktop">
             <div class="page-width for-happy-cus">
@@ -112,10 +112,10 @@
           </div>`);
             var count = 1;
 
-            var slidesContainer = $(".carousel-container");
-            var slide = $(".happy-cus-carousel-item");
-            var prevButton = $(".left-arrow");
-            var nextButton = $(".right-arrow");
+            var slidesContainer = convert.$(".carousel-container");
+            var slide = convert.$(".happy-cus-carousel-item");
+            var prevButton = convert.$(".left-arrow");
+            var nextButton = convert.$(".right-arrow");
 
             nextButton.on("click", function () {
               var slideWidth = slide.width();
@@ -126,7 +126,7 @@
                 return false;
               }
               count++;
-              $(".current").html(count);
+              convert.$(".current").html(count);
             });
 
             prevButton.on("click", function () {
@@ -138,7 +138,7 @@
                 return false;
               }
               count--;
-              $(".current").html(count);
+              convert.$(".current").html(count);
             });
           });
         };

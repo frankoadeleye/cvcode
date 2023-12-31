@@ -1,12 +1,21 @@
 /* applicable to scripts v1 and v2 */
 @media (min-width: 1024px) {
   .happy-cus-test .page-width.for-happy-cus {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .happy-cus-test .page-width.for-happy-cus.desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -16,23 +25,37 @@
 
   .carousel-container.desktop {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 45px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .carousel-container.desktop > .happy-cus-carousel-item {
     width: 100px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
     flex: 1 1 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .carousel-container.desktop > .happy-cus-carousel-item > img {
     width: 150px;
     height: 200px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
   }
 
@@ -70,8 +93,14 @@
 
 @media (max-width: 1023px) {
   .happy-cus-test .page-width.for-happy-cus {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
@@ -83,6 +112,8 @@
   }
 
   .happy-cus-carousel-navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -98,11 +129,22 @@
 
   .happy-cus-test .carousel-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     display: flex;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     width: 100%;
     display: flex;
     overflow: scroll;
@@ -117,11 +159,22 @@
 
   .happy-cus-test .happy-cus-carousel-item {
     width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
     flex: 1 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
 
@@ -132,6 +185,7 @@
   .happy-cus-test .happy-cus-carousel-item-img {
     width: 150px;
     height: 200px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-top: 10px;
   }
@@ -161,10 +215,16 @@
   }
 
   .happy-cus-test .happy-cus-carousel-navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -175,8 +235,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
