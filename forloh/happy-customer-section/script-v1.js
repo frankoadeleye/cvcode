@@ -4,7 +4,7 @@
     className: "forloh-test",
     debug: 0,
     testName: "happy-customer-section",
-    testVersion: "0.0.2",
+    testVersion: "0.0.1",
   };
   const convertInterval = setInterval(() => {
     if (typeof convert != "undefined") {
