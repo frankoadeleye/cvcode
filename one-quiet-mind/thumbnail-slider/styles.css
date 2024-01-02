@@ -1,3 +1,19 @@
+@media (max-width: 749px) {
+  .thumbnail-slider .slider-container,
+  .thumbnail-slider swiper-container,
+  .thumbnail-slider swiper-slide,
+  .thumbnail-slider swiper-slide img,
+  .thumbnail-slider swiper-container,
+  .thumbnail-slider swiper-slide,
+  .thumbnail-slider .mySwiper,
+  .thumbnail-slider .mySwiper2,
+  .thumbnail-slider .mySwiper2 swiper-slide,
+  .thumbnail-slider .mySwiper2 .swiper-slide-thumb-active,
+  .thumbnail-slider swiper-slide img {
+    display: none;
+  }
+}
+
 .thumbnail-slider
   .product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile {
   width: 100%;

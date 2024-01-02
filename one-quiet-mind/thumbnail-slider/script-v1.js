@@ -40,29 +40,29 @@
           });
         };
         const loadTest = () => {
-          convert.$(document).ready(function () {
-            const sliderDataBlue = [
-              {
-                imgSrc: "https://iili.io/J55uDjp.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J55lhdP.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J556PIe.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J556trQ.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J55PJhg.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J55PBYN.webp",
-              },
-            ];
+          if (convert.$(window).width() > 749) {
+            convert.$(document).ready(function () {
+              const sliderDataBlue = [
+                {
+                  imgSrc: "https://iili.io/J55uDjp.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J55lhdP.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J556PIe.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J556trQ.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J55PJhg.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J55PBYN.webp",
+                },
+              ];
 
-            if (convert.$(window).width() > 749) {
               const SwiperSlideItem = (imgSrc) =>
                 `<swiper-slide>
                <img src="${imgSrc}" />
@@ -108,23 +108,25 @@
                   ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
                 )
                 .append(Slider);
-            }
-          });
+            });
+          }
         };
 
-        if (!convert.$("body").hasClass("thumbnail-slider")) {
-          convert.$("body").addClass("thumbnail-slider");
-          convert
-            .$(
-              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">'
-            )
-            .appendTo("head");
-          convert
-            .$(
-              '<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>'
-            )
-            .appendTo("body");
-          loadTest();
+        if (convert.$(window).width() > 749) {
+          if (!convert.$("body").hasClass("thumbnail-slider")) {
+            convert.$("body").addClass("thumbnail-slider");
+            convert
+              .$(
+                '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">'
+              )
+              .appendTo("head");
+            convert
+              .$(
+                '<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>'
+              )
+              .appendTo("body");
+            loadTest();
+          }
         }
       });
     }
