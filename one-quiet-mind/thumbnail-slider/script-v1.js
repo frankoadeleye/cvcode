@@ -62,12 +62,13 @@
               },
             ];
 
-            const SwiperSlideItem = (imgSrc) =>
-              `<swiper-slide>
-              <img src="${imgSrc}" />
-            </swiper-slide>`;
+            if (convert.$(window).width() > 749) {
+              const SwiperSlideItem = (imgSrc) =>
+                `<swiper-slide>
+               <img src="${imgSrc}" />
+              </swiper-slide>`;
 
-            const Slider = `
+              const Slider = `
             <div class="slider-container">
               <swiper-container
                 style="--swiper-navigation-color: blue; --swiper-pagination-color: #fff"
@@ -97,16 +98,17 @@
               </swiper-container>
             </div>`;
 
-            convert
-              .$(
-                ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile > li"
-              )
-              .remove();
-            convert
-              .$(
-                ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
-              )
-              .append(Slider);
+              convert
+                .$(
+                  ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile > li"
+                )
+                .remove();
+              convert
+                .$(
+                  ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
+                )
+                .append(Slider);
+            }
           });
         };
 
