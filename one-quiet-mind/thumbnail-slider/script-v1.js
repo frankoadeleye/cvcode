@@ -63,6 +63,27 @@
                 },
               ];
 
+              const sliderDataBlueberry = [
+                {
+                  imgSrc: "https://iili.io/J5M2Ule.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J5M2LxV.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J5M3HOv.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J5M3FsI.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J5M3GzQ.webp",
+                },
+                {
+                  imgSrc: "https://iili.io/J5M3XqP.webp",
+                },
+              ];
+
               const SwiperSlideItem = (imgSrc) =>
                 `<swiper-slide>
                <img src="${imgSrc}" />
@@ -98,11 +119,6 @@
               </swiper-container>
             </div>`;
 
-              convert
-                .$(
-                  ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile > li"
-                )
-                .remove();
               convert
                 .$(
                   ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
