@@ -40,56 +40,55 @@
           });
         };
         const loadTest = () => {
-          if (convert.$(window).width() > 749) {
-            convert.$(document).ready(function () {
-              const sliderDataBlue = [
-                {
-                  imgSrc: "https://iili.io/J55uDjp.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J55lhdP.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J556PIe.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J556trQ.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J55PJhg.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J55PBYN.webp",
-                },
-              ];
+          convert.$(document).ready(function () {
+            const sliderDataBlue = [
+              {
+                imgSrc: "https://iili.io/J55uDjp.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J55lhdP.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J556PIe.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J556trQ.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J55PJhg.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J55PBYN.webp",
+              },
+            ];
 
-              const sliderDataBlueberry = [
-                {
-                  imgSrc: "https://iili.io/J5M2Ule.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J5M2LxV.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J5M3HOv.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J5M3FsI.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J5M3GzQ.webp",
-                },
-                {
-                  imgSrc: "https://iili.io/J5M3XqP.webp",
-                },
-              ];
+            const sliderDataBlueberry = [
+              {
+                imgSrc: "https://iili.io/J5M2Ule.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J5M2LxV.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J5M3HOv.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J5M3FsI.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J5M3GzQ.webp",
+              },
+              {
+                imgSrc: "https://iili.io/J5M3XqP.webp",
+              },
+            ];
 
-              const SwiperSlideItem = (imgSrc) =>
-                `<swiper-slide>
+            const SwiperSlideItem = (imgSrc) =>
+              `<swiper-slide>
                <img src="${imgSrc}" />
               </swiper-slide>`;
 
-              const Slider = `
+            const Slider = `
             <div class="slider-container">
               <swiper-container
                 style="--swiper-navigation-color: blue; --swiper-pagination-color: #fff"
@@ -119,30 +118,27 @@
               </swiper-container>
             </div>`;
 
-              convert
-                .$(
-                  ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
-                )
-                .append(Slider);
-            });
-          }
+            convert
+              .$(
+                ".product__media-list.contains-media.grid.grid--peek.list-unstyled.slider.slider--mobile"
+              )
+              .append(Slider);
+          });
         };
 
-        if (convert.$(window).width() > 749) {
-          if (!convert.$("body").hasClass("thumbnail-slider")) {
-            convert.$("body").addClass("thumbnail-slider");
-            convert
-              .$(
-                '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">'
-              )
-              .appendTo("head");
-            convert
-              .$(
-                '<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>'
-              )
-              .appendTo("body");
-            loadTest();
-          }
+        if (!convert.$("body").hasClass("thumbnail-slider")) {
+          convert.$("body").addClass("thumbnail-slider");
+          convert
+            .$(
+              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">'
+            )
+            .appendTo("head");
+          convert
+            .$(
+              '<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>'
+            )
+            .appendTo("body");
+          loadTest();
         }
       });
     }
