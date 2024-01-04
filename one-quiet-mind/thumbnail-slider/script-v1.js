@@ -94,7 +94,7 @@
               `;
 
             jQuery.getScript(
-              "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+              "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js",
               () => {
                 new Swiper(".mySwiper2", {
                   spaceBetween: 10,
@@ -132,7 +132,7 @@
           convert.$("body").addClass("thumbnail-slider");
           convert
             .$(
-              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">'
+              '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>'
             )
             .appendTo("head");
           loadTest();
