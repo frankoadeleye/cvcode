@@ -62,61 +62,63 @@
               },
             ];
 
-            const sliderDataBlueberry = [
-              {
-                imgSrc: "https://iili.io/J5M2Ule.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J5M2LxV.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J5M3HOv.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J5M3FsI.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J5M3GzQ.webp",
-              },
-              {
-                imgSrc: "https://iili.io/J5M3XqP.webp",
-              },
-            ];
-
             const SwiperSlideItem = (imgSrc) =>
-              `<swiper-slide>
-               <img src="${imgSrc}" />
-              </swiper-slide>`;
+              `<div class="swiper-slide">
+		          <img src="${imgSrc}" />
+		        </div>`;
 
             const Slider = `
-            <div class="slider-container">
-              <swiper-container
-                style="--swiper-navigation-color: blue; --swiper-pagination-color: #fff"
-                class="mySwiper"
-                thumbs-swiper=".mySwiper2"
-                space-between="0"
-                navigation="true"
-              >
-                  ${sliderDataBlue
-                    .map((item) => {
-                      return SwiperSlideItem(item.imgSrc);
-                    })
-                    .join("")}
-              </swiper-container>
-              <swiper-container
-                class="mySwiper2"
-                space-between="10"
-                slides-per-view="${sliderDataBlue.length}"
-                free-mode="true"
-                watch-slides-progress="true"
-              >
-                  ${sliderDataBlue
-                    .map((item) => {
-                      return SwiperSlideItem(item.imgSrc);
-                    })
-                    .join("")}
-              </swiper-container>
-            </div>`;
+               <div
+			      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" navigation="true"
+			      class="swiper mySwiper2"
+			    >
+			      <div class="swiper-wrapper">
+			         ${sliderDataBlue
+                 .map((item) => {
+                   return SwiperSlideItem(item.imgSrc);
+                 })
+                 .join("")}
+			      </div>
+			      <div class="swiper-button-next"></div>
+			      <div class="swiper-button-prev"></div>
+			    </div>
+			    <div thumbsSlider="" class="swiper mySwiper">
+			      <div class="swiper-wrapper">
+			         ${sliderDataBlue
+                 .map((item) => {
+                   return SwiperSlideItem(item.imgSrc);
+                 })
+                 .join("")}
+			      </div>
+			    </div>
+              `;
+
+            jQuery.getScript(
+              "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+              () => {
+                new Swiper(".mySwiper2", {
+                  spaceBetween: 10,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  breakpoints: {},
+                  thumbs: {
+                    swiper: new Swiper(".mySwiper", {
+                      spaceBetween: 10,
+                      slidesPerView: sliderDataBlue.length,
+                      freeMode: true,
+                      navigation: true,
+                      watchSlidesProgress: true,
+                    }),
+                  },
+                });
+              }
+            );
 
             convert
               .$(
@@ -130,14 +132,9 @@
           convert.$("body").addClass("thumbnail-slider");
           convert
             .$(
-              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">'
+              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">'
             )
             .appendTo("head");
-          convert
-            .$(
-              '<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>'
-            )
-            .appendTo("body");
           loadTest();
         }
       });
