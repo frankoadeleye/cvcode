@@ -3,7 +3,7 @@
   const testInfo = {
     className: "ArticPodStore-v2-test",
     debug: 0,
-    testName: "shop-all-product-cta",
+    testName: "empty-cart-cta",
     testVersion: "0.0.2",
   };
   const waitForElement = (selector) => {
