@@ -77,23 +77,14 @@
         };
 
         const LoadTest = () => {
-          var subchildrenLen = convert.$(
-            "#Slider-template--20330949804381__84645203-0e22-4f2d-bc59-fca825baf5e0 [id^=Slide-template--20330949804381__84645203-0e22-4f2d-bc59-fca825baf5e0]"
-          ).length;
-
-          convert.$(document).ready(function () {
-            classAllocation(testInfo.testName);
-
-            convert.$("#Slider-template--20330949804381__84645203-0e22-4f2d-bc59-fca825baf5e0")
-              .map((index, item) => {
-                for (let i = 0; i < subchildrenLen; i++) {
-                  var currentChild = convert.$(`#Slide-template--20330949804381__84645203-0e22-4f2d-bc59-fca825baf5e0-${i + 1}`);
-                  var targetEle = currentChild.find(".card__badge.bottom.left > .badge.badge--bottom-left.color-accent-2");
-                  var reg = currentChild.find(".price__sale > span > s.price-item.price-item--regular").text();
-                  var discounted = currentChild.find(".price__regular > .price-item.price-item--regular").text();
+            waitForElement('.grid.product-grid > .grid__item').then(() => {
+              convert.$('.grid.product-grid > .grid__item').each((i,e) => {
+                  let targetEle = convert.$(e).find('.card__badge span.badge');
+                  let reg = convert.$(e).find('.price.price--on-sale .price__sale .price-item.price-item--regular').text();
+                  let discounted = convert.$(e).find('.price.price--on-sale .price__sale .price-item.price-item--sale.price-item--last').text();
                   targetEle.text(`Ahorra ${removeLastTwoZeros(reg, discounted)}€`);
-                }
               });
+            }); 
             waitForElement(".product__info-container").then(() => {
                 var parent = convert.$(".product__info-container");
                 let targetEle = parent.find(".badge.price__badge-sale");
@@ -114,7 +105,6 @@
                 }
               });
             });
-          });
         };
 
         if (!convert.$("body").hasClass(testInfo.testName)) {
