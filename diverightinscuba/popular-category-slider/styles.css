@@ -98,8 +98,6 @@
   border-radius: 20px;
   background: #fff;
   height: 450px;
-  -webkit-box-shadow: 5px 5px 109px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 5px 5px 109px 0px rgba(0, 0, 0, 0.1);
 }
 
 .popular-cat-slider .swiper-slide .slider-img {
