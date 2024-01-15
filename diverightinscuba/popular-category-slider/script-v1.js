@@ -80,12 +80,9 @@
                           .map((data, i) => singleSlideHtml(data, i))
                           .join("\n")}
                       </div>
-                      <div class="swiper-pagination"></div>
                       <div class="swiper-button-prev">
-                        <img class="onhover" src="https://iili.io/JYVQjUb.jpg" alt="" />
                       </div>
                       <div class="swiper-button-next">
-                        
                       </div>
                   </div>
             `;
