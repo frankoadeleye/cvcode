@@ -83,24 +83,16 @@
                       </div>
                       <div class="swiper-pagination"></div>
                       <div class="swiper-button-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="39" viewBox="0 0 36 39" fill="none">
-						  <path d="M28.5 18L7.5 18" stroke="#1C1C1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-						  <path d="M18 28.5L7.5 18L18 7.5" stroke="#1C1C1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+                        <img class="onhover" src="https://iili.io/JYVQjUb.jpg" alt="" />
                       </div>
                       <div class="swiper-button-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9"
-                          viewBox="0 0 5 9" fill="none">
-                          <rect width="1.06849" height="5.99956"
-                            transform="matrix(0.707107 0.707107 0.707107 -0.707107 0 7.91745)" fill="black" />
-                          <rect x="0.0512695" y="0.733765" width="1.06849" height="6.07516"
-                            transform="rotate(-43.3719 0.0512695 0.733765)" fill="black" />
-                        </svg>
+                        
                       </div>
                   </div>
             `;
 
             convert.$(".category.owl-carousel.owl-theme.owl-loaded").remove();
+            convert.$(".owl-stage-outer").remove();
 
             convert.$(".flex-container.custom-container").append(slider);
             jQuery.getScript(
