@@ -91,10 +91,11 @@
                   </div>
             `;
 
-            convert.$(".category.owl-carousel.owl-theme.owl-loaded").remove();
-            convert.$(".owl-stage-outer").remove();
-
-            convert.$(".flex-container.custom-container").append(slider);
+            convert
+              .$(
+                ".category-section.new-category-section > .flex-container.custom-container"
+              )
+              .append(slider);
             jQuery.getScript(
               "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
               () => {
@@ -115,11 +116,11 @@
                       slidesPerView: 1,
                       spaceBetween: 10,
                     },
-                    768: {
+                    400: {
                       slidesPerView: 2,
                       spaceBetween: 10,
                     },
-                    1024: {
+                    768: {
                       slidesPerView: 3,
                       spaceBetween: 20,
                     },
