@@ -81,7 +81,7 @@
                   let discounted = convert.$(e).find('.price.price--on-sale .price__sale .price-item.price-item--sale.price-item--last').text();
                   targetEle.text(`Ahorra ${getPercentage(convertToNumber(discounted),convertToNumber(reg))}%`);
               });
-            }); 
+            });
             waitForElement(".product__info-container").then(() => {
                 var parent = convert.$(".product__info-container");
                 let targetEle = parent.find(".badge.price__badge-sale");
