@@ -42,30 +42,29 @@
         const loadTest = () => {
           convert.$(document).ready(function () {
             classAllocation(testInfo.testName);
-            alert("I am here or am I??");
             const sliderData = [
               {
-                img: "https://iili.io/JRU8Tba.png",
+                img: "https://iili.io/JYWRKua.webp",
                 title: "ALL SCUBA GEAR",
                 content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
               },
               {
-                img: "https://iili.io/JRU8Tba.png",
+                img: "https://iili.io/JYWRqZv.webp",
                 title: "TECHNICAL DIVING",
                 content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
               },
               {
-                img: "https://iili.io/JRU8Tba.png",
+                img: "https://iili.io/JYWRnGp.webp",
                 title: "EXPOSURE GEAR",
                 content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
               },
               {
-                img: "https://iili.io/JRU8Tba.png",
+                img: "https://iili.io/JYWRT8X.webp",
                 title: "EXPOSURE GEAR",
                 content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
               },
               {
-                img: "https://iili.io/JRU8Tba.png",
+                img: "https://iili.io/JYWRcMl.webp",
                 title: "TECHNICAL DIVING",
                 content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
               },
