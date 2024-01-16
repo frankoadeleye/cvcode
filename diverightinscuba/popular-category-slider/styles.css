@@ -16,6 +16,8 @@
 .popular-cat-slider .category-section.new-category-section {
   background: #edf3ff;
   margin-top: 0px !important;
+  position: relative;
+  top: -20px;
 }
 
 .popular-cat-slider .swiper .swiper-button-next {
