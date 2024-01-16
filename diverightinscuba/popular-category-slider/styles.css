@@ -20,6 +20,49 @@
   top: -20px;
 }
 
+.swiper .swiper-slide .slider-content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+}
+
+.swiper .swiper-slide .slider-content span{
+	cursor: pointer;
+	padding: 0px 7px 0px 7px;
+}
+
+.swiper .swiper-slide .slider-content span:first-child{
+	cursor: pointer;
+	padding: 0px 7px 0px 0px;
+}
+
+.swiper .swiper-slide .slider-content span a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.swiper .swiper-slide .slider-title a{
+	font-size: 22px;
+	color: #1C1C1E;
+}
+
+.swiper .swiper-slide .slider-content span a:after{
+	content: '|';
+	position: absolute;
+	font-size: 11px;
+	margin-left: 5px;
+}
+
 .popular-cat-slider .swiper .swiper-button-next {
   position: absolute;
   top: 520px !important;
@@ -203,4 +246,60 @@
   .popular-cat-slider .swiper .swiper-button-prev:hover {
     left: 40%;
   }
+}
+
+@media (max-width: 580px) {
+  .popular-cat-slider .swiper-slide .slider-img {
+	  width: 110px;
+	  height: 110px !important;
+   }
+}
+
+@media (max-width: 399px) {
+  .popular-cat-slider .swiper .swiper-button-next,
+  .popular-cat-slider .swiper .swiper-button-next:hover {
+    right: 25%;
+  }
+
+  .popular-cat-slider .swiper .swiper-button-prev,
+  .popular-cat-slider .swiper .swiper-button-prev:hover {
+    left: 25%;
+  }
+  
+  .swiper .swiper-slide .slider-title a{
+	font-size: 12px !important;
+	color: #1C1C1E;
+	line-height: -100px !important;
+   }
+   
+   .swiper .swiper-slide .slider-content span a{
+	font-size: 7px !important;
+   }
+   
+   .swiper .swiper-slide .slider-content{
+	line-height: 10px !important;
+   	
+   }
+   
+   .popular-cat-slider .swiper-slide .slider-img {
+	  width: 60px;
+	  height: 60px !important;
+   }
+   
+   .popular-cat-slider .swiper-slide {
+	  padding: 16px 10px;
+	  height: 250px !important;
+	}
+	
+	.popular-cat-slider .swiper .swiper-button-next,
+  .popular-cat-slider .swiper .swiper-button-next:hover,
+  .popular-cat-slider .swiper .swiper-button-prev,
+  .popular-cat-slider .swiper .swiper-button-prev:hover {
+    top: 320px !important;
+  }
+  
+  .popular-cat-slider .swiper {
+  padding-top: 12px !important;
+  padding-bottom: 173px !important;
+}
 }

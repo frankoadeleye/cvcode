@@ -45,33 +45,85 @@
             const sliderData = [
               {
                 img: "https://iili.io/JYWRKua.webp",
-                title: "ALL SCUBA GEAR",
-                content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
+                title: {
+                  name: "ALL SCUBA GEAR",
+                  link: "https://www.diverightinscuba.com/recreational-scuba.html/"
+                },
+                content: [
+                  { name: "DIVE COMPUTERS",link: "https://www.diverightinscuba.com/gauges-c-394-2.html/"},
+                  { name: "LIGHTS",link: "https://www.diverightinscuba.com/lights-c-51.html/"},
+                  { name: "BCDS",link: "https://www.diverightinscuba.com/bcds-c-409.html/"},
+                  { name: "REGULATORS",link: "https://www.diverightinscuba.com/regulatorsoctos-c-86.html/"},
+                  { name: "MASKS",link: "https://www.diverightinscuba.com/masks-c-56.html/"},
+                  { name: "TANKS",link: "https://www.diverightinscuba.com/tanksaccys-c-141-2.html/"},
+                  { name: "SEE ALL",link: "https://www.diverightinscuba.com/recreational-scuba.html/"},
+                ],
               },
               {
                 img: "https://iili.io/JYWRqZv.webp",
-                title: "TECHNICAL DIVING",
-                content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
+                title: {
+                  name: "TECHNICAL DIVING",
+                  link: "https://www.diverightinscuba.com/techequipment-c-363.html/"
+                },
+                content: [
+                  { name: "ANALYZERS",link: "https://www.diverightinscuba.com/analyzers.html/"},
+                  { name: "CLIPS & SNAPS",link: "https://www.diverightinscuba.com/techequipmentclipsandsnaps-c-363-410.html/"},
+                  { name: "BP/W",link: "https://www.diverightinscuba.com/techequipmentbackplatesandpads-c-363-366.html/"},
+                  { name: "TECH REGULATORS",link: "https://www.diverightinscuba.com/tech-regs.html/"},
+                  { name: "TECH COMPUTERS",link: "https://www.diverightinscuba.com/techequipmenttechnicalcomputers-c-363-433.html/"},
+                  { name: "SCOOTERS",link: "https://www.diverightinscuba.com/techequipmenttechnicalcomputers-c-363-433.html/"},
+                  { name: "SEE ALL",link: "https://www.diverightinscuba.com/recreational-scuba.html/"},
+                ],
               },
               {
                 img: "https://iili.io/JYWRnGp.webp",
-                title: "EXPOSURE GEAR",
-                content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
+                title: {
+                  name: "EXPOSURE GEAR",
+                  link: "https://www.diverightinscuba.com/exposure-gear.html/"
+                },
+                content: [
+                  { name: "DRY SUIT",link: "https://www.diverightinscuba.com/techequipmenttechnicalcomputers-c-363-433.html/"},
+                  { name: "DRYGLOVES",link: "https://www.diverightinscuba.com/drysuitsundiesdrysuitgloves-c-270-428.html/"},
+                  { name: "UNDERGARMENTS",link: "https://www.diverightinscuba.com/drysuitsundiesundergarments-c-270-271.html/"},
+                  { name: "WETSUITS",link: "https://www.diverightinscuba.com/wetsuits-c-116.html/"},
+                  { name: "BOOTS",link: "https://www.diverightinscuba.com/drysuitsundiesaccessories-c-270-273.html/"},
+                  { name: "ACCESSORIES",link: "https://www.diverightinscuba.com/drysuitsundiesaccessories-c-270-273.html/"},
+                  { name: "SEE ALL",link: "https://www.diverightinscuba.com/recreational-scuba.html/"},
+                ],
               },
               {
                 img: "https://iili.io/JYWRT8X.webp",
-                title: "EXPOSURE GEAR",
-                content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
+                title: {
+                  name: "SNORKELING GEAR",
+                  link: "https://www.diverightinscuba.com/snorkelingstuff-c-197.html/"
+                },
+                content: [
+                  { name: "FINS",link: "https://www.diverightinscuba.com/snorkelingstufffins-c-197-445.html/"},
+                  { name: "MASKS",link: "https://www.diverightinscuba.com/snorkelingstuffmasks-c-197-443.html/"},
+                  { name: "SNORKELING",link: "https://www.diverightinscuba.com/snorkelingstuffsnorkels-c-197-444.html/"},
+                  { name: "SNOKRKELING PACKAGES",link: "https://www.diverightinscuba.com/snorkelingstuffsnorkelingpackages-c-197-446.html/"},
+                  { name: "SNORKELING VESTS",link: "https://www.diverightinscuba.com/snorkelingstuffsnorkelingvests-c-197-442.html/"},
+                  { name: "SEE ALL",link: "https://www.diverightinscuba.com/recreational-scuba.html/"},
+                ],
               },
               {
                 img: "https://iili.io/JYWRcMl.webp",
-                title: "TECHNICAL DIVING",
-                content: `anauvzers | cupsa swaps | sew TECH REGULATORS | TECH COMPUTERS scoorens | seeaw`,
+                title: {
+                  name: "PSD & MILITARY",
+                  link: "https://www.diverightinscuba.com/publicsafety-c-412.html/"
+                },
+                content: [
+                  { name: "DIVE RESCUE GEAR",link: "https://www.diverightinscuba.com/publicsafetydivingequipment-c-412-452.html/"},
+                  { name: "SURFACE RESCUE GEAR",link: "https://www.diverightinscuba.com/publicsafety-c-412.html/"},
+                  { name: "CLASSES",link: "https://www.diverightinscuba.com/publicsafety-c-412.html#pub-sd/"},
+                  { name: "REPAIRS",link: "https://www.diverightinscuba.com/publicsafetypfd-c-412-451.html/"},
+                  { name: "SEE ALL",link: "https://www.diverightinscuba.com/recreational-scuba.html/"},
+                ],
               },
             ];
 
             const singleSlideHtml = ({ img, title, content }, index) =>
-              `<div class="swiper-slide"><img class="slider-img" src="${img}" alt="${title}"><h2 class="slider-title">${title}</h2><p class="slider-content">${content}</p></div>`;
+              `<div class="swiper-slide"><img class="slider-img" src="${img}" alt="${title.name}"><h2 class="slider-title"><a href='${title.link}'>${title.name}</a></h2><p class="slider-content">${content.map(item=> `<span><a href='${item.link}'>${item.name}</a></span>`).join("\n")}</p></div>`;
 
             const slider = `
                   <div class="swiper mySwiper">
@@ -109,7 +161,7 @@
                   },
                   breakpoints: {
                     310: {
-                      slidesPerView: 1,
+                      slidesPerView: 2,
                       spaceBetween: 10,
                     },
                     400: {
