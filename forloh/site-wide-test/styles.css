@@ -54,6 +54,7 @@
 
 .site-wide-announcements a.announcement-link .announcement-link-text span a{
   font-weight: 700;
+  padding-left: 2px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
