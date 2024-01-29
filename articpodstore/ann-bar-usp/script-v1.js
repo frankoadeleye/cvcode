@@ -57,18 +57,24 @@
               },
             ];
 
-            const singleSlideHtml = ({ html }, index) => html;
-            const slider = `<div class="swiper mySwiper">
-                              <div class="swiper-wrapper">
-                                ${sliderData
-                                  .map((data, i) => singleSlideHtml(data, i))
-                                  .join("\n")}
-                              </div>
-                              <div class="swiper-button-next"></div>
-                              <div class="swiper-button-prev"></div>
-                            </div>`;
+            const vertPartition = `<span class="vert-partition"></span>`;
 
-            convert.$(".announcement-bar").html(slider);
+            const singleSlideHtml = ({ html }, index) => html;
+            const slider = `<div class="swiper mySwiper"><div class="swiper-wrapper">${sliderData
+              .map((data, i) => singleSlideHtml(data, i))
+              .join(
+                "\n"
+              )}</div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div>`;
+
+            const annRow = `<p class="announcement-bar__message ann-row"><span>FREE 2-5 DAY US SHIPPING</span>
+                             ${vertPartition}<span>30-DAY MONEY BACK GUARANTEE</span>${vertPartition}
+                             <span>LOVED BY 10,000+ PLUNGERS <img src="https://i.ibb.co/1qR9BpL/stars.png" alt="stars" border="0" /></span>
+                             ${vertPartition}<span>24/7 SUPPORT, WE'LL RESOLVE ANY ISSUES</span>
+                           </p>`;
+
+            convert
+              .$(".announcement-bar")
+              .html(`<div class="ann-column">${slider}${annRow}</div>`);
             jQuery.getScript(
               "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
               () => {
