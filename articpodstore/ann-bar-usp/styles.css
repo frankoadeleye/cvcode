@@ -1,0 +1,96 @@
+.ann-bar-usp .ann-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.ann-bar-usp .ann-row {
+  display: none;
+}
+
+.ann-bar-usp .swiper {
+  width: 100%;
+}
+
+.ann-bar-usp .swiper-slide {
+  width: 100%;
+}
+
+.ann-bar-usp .swiper-slide.announcement-bar__message {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.ann-bar-usp .swiper-slide.announcement-bar__message > img {
+  margin-left: 10px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.ann-bar-usp .swiper .swiper-button-next,
+.ann-bar-usp .swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-top: -14px !important;
+}
+
+.ann-bar-usp .swiper .swiper-button-next {
+  background-image: url("https://i.ibb.co/wWHNByB/right-sc.png");
+}
+
+.ann-bar-usp .swiper .swiper-button-prev {
+  background-image: url("https://i.ibb.co/wWHNByB/right-sc.png");
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.ann-bar-usp .swiper .swiper-button-next::after,
+.ann-bar-usp .swiper .swiper-button-prev::after {
+  content: "";
+}
+
+@media (min-width: 1024px) {
+  .ann-bar-usp .swiper {
+    display: none;
+  }
+
+  .ann-bar-usp .ann-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .ann-bar-usp .vert-partition {
+    width: 4px;
+    height: 22px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background: #3177b4;
+    margin-left: 34px;
+    margin-right: 34px;
+    margin: auto;
+  }
+}
