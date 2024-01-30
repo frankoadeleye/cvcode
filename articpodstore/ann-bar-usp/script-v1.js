@@ -79,12 +79,13 @@
               "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
               () => {
                 new Swiper(".mySwiper", {
+                  loop: true,
                   navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                   },
                   autoplay: {
-                    delay: 5000,
+                    delay: 8000,
                     disableOnInteraction: false,
                   },
                 });
