@@ -1,0 +1,113 @@
+.artic-sidebar .sidebar-divider {
+  width: 100%;
+  margin-top: 15px;
+  height: 1px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background: #3177b4;
+}
+
+.artic-sidebar .sidebar-review-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.artic-sidebar .sidebar-review-section .stars {
+  margin: auto;
+}
+
+.artic-sidebar .sidebar-review-section .review-text {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 25px;
+}
+
+.artic-sidebar .sidebar-review-section .reviewer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.artic-sidebar .sidebar-review-section .reviewer-section .reviewer-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.artic-sidebar
+  .sidebar-review-section
+  .reviewer-section
+  .reviewer-details
+  .name {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.artic-sidebar
+  .sidebar-review-section
+  .reviewer-section
+  .reviewer-details
+  span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.artic-sidebar
+  .sidebar-review-section
+  .reviewer-section
+  .reviewer-details
+  span
+  img {
+  width: 14px;
+  height: 14px;
+}
