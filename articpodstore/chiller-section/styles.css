@@ -1,0 +1,121 @@
+.artic-product-chiller-section p {
+  margin: 0;
+  padding: 0;
+}
+
+.artic-product-chiller-section .chiller-section {
+  width: 100%;
+  height: 140px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background: #efefef;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.artic-product-chiller-section .chiller-section .chiller-text-sectn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: inherit;
+  padding: 10px 0px 10px 11px;
+}
+
+.artic-product-chiller-section .chiller-section button {
+  width: 170px;
+  height: 41px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  outline-style: none;
+  border: 1px solid #222323;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #222323;
+  color: #fff;
+}
+
+.artic-product-chiller-section .chiller-section button a {
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.artic-product-chiller-section .chiller-text-sectn p:first-child {
+  color: #3177b4;
+  font-family: Lato;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.artic-product-chiller-section .chiller-text-sectn p:last-child {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 17px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.artic-product-chiller-section img {
+  height: inherit;
+  width: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .artic-product-chiller-section .chiller-text-sectn p:first-child {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .artic-product-chiller-section .chiller-text-sectn p:last-child {
+    margin-bottom: 7px;
+    font-size: 11px;
+  }
+  .artic-product-chiller-section .chiller-section button {
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .artic-product-chiller-section img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100px;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .artic-product-chiller-section img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 70px;
+    max-height: 100%;
+  }
+}
