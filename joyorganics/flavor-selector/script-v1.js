@@ -44,15 +44,23 @@
             classAllocation(testInfo.testName);
             const flavorSelector = `
             <select class="selector-dropdown flavor">
-              <option value="">Strawberry Lemonade 30 Pack 25mg</option>
-              <option value="">Strawberry Lemonade 30 Pack 10mg</option>
-              <option value="">Green Apple 30 Pack 10mg</option>
+              <option value="Strawberry Lemonade 30 Pack 25mg">Strawberry Lemonade 30 Pack 25mg</option>
+              <option value="Strawberry Lemonade 30 Pack 10mg">Strawberry Lemonade 30 Pack 10mg</option>
+              <option value="Green Apple 30 Pack 10mg">Green Apple 30 Pack 10mg</option>
             </select>
             `;
 
-            convert
-              .$(".price.price--large.price--on-sale")
-              .append(flavorSelector);
+            convert.$("#rc_radio_options").prepend(flavorSelector);
+
+            convert.$(".selector-dropdown.flavor").change(function () {
+              if (convert.$(".selector-dropdown.flavor").val() ==="Strawberry Lemonade 30 Pack 25mg") {
+                $("label[for='template--15881333407925__main-1-0']").trigger("click");
+              } else if (convert.$(".selector-dropdown.flavor").val() ==="Strawberry Lemonade 30 Pack 10mg") {
+                $("label[for='template--15881333407925__main-1-1']").trigger("click");
+              } else if (convert.$(".selector-dropdown.flavor").val() ==="Green Apple 30 Pack 10mg") {
+                $("label[for='template--15881333407925__main-1-2']").trigger("click");
+              }
+            });
           });
         };
         if (!convert.$("body").hasClass(testInfo.testName)) {

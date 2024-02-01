@@ -29,12 +29,13 @@
   background-size: 0.65em auto, 100%;
 }
 
-.flavor-selector .selector-dropdown.flavor::-ms-expand {
+.flavor-selector .selector-dropdown.flavor::-ms-expand,
+.flavor-selector .rebuy-product-options {
   display: none;
 }
 
-.rebuy-product-options {
-  display: none;
+.flavor-selector fieldset.js.product-form__input {
+  display: none !important;
 }
 
 @media (min-width: 768px) {
@@ -44,5 +45,11 @@
 
   .rebuy-product-options {
     display: block;
+  }
+
+  .flavor-selector fieldset.js.product-form__input {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
