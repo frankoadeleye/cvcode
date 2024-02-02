@@ -1,9 +1,10 @@
-.flavor-selector {
+.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Mulish !important;
 }
 
-.flavor-selector .selector-dropdown.flavor option {
+.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor option {
   color: #000;
   font-family: Mulish !important;
   font-size: 16px;
@@ -12,7 +13,7 @@
   line-height: normal;
 }
 
-.flavor-selector .selector-dropdown.flavor {
+.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
   width: 100%;
   height: 47px;
   -ms-flex-negative: 0;
@@ -29,17 +30,17 @@
   background-size: 0.65em auto, 100%;
 }
 
-.flavor-selector .selector-dropdown.flavor::-ms-expand,
-.flavor-selector .rebuy-product-options {
+.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor::-ms-expand,
+.joyorganic-flavor-selector-v1-test .rebuy-product-options {
   display: none;
 }
 
-.flavor-selector fieldset.js.product-form__input {
+.joyorganic-flavor-selector-v1-test fieldset.js.product-form__input {
   display: none !important;
 }
 
 @media (min-width: 768px) {
-  .flavor-selector .selector-dropdown {
+  .joyorganic-flavor-selector-v1-test .selector-dropdown {
     display: none;
   }
 
@@ -47,7 +48,7 @@
     display: block;
   }
 
-  .flavor-selector fieldset.js.product-form__input {
+  .joyorganic-flavor-selector-v1-test fieldset.js.product-form__input {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;

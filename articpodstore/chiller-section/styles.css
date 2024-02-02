@@ -1,9 +1,13 @@
-.artic-product-chiller-section p {
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn p {
   margin: 0;
   padding: 0;
 }
 
-.artic-product-chiller-section .chiller-section {
+.articpodstore-chiller-section-v1-test div[data-name='Right click on this, and choose Edit Code.']{
+	display: none;
+}
+
+.articpodstore-chiller-section-v1-test .chiller-section {
   width: 100%;
   height: 140px;
   -ms-flex-negative: 0;
@@ -21,7 +25,7 @@
   margin: 10px 0px;
 }
 
-.artic-product-chiller-section .chiller-section .chiller-text-sectn {
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,8 +40,8 @@
   padding: 10px 0px 10px 11px;
 }
 
-.artic-product-chiller-section .chiller-section button {
-  width: 170px;
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn button {
+  max-width: 170px;
   height: 41px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -50,7 +54,7 @@
   color: #fff;
 }
 
-.artic-product-chiller-section .chiller-section button a {
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn button a {
   color: #fff;
   font-family: Lato;
   font-size: 14px;
@@ -59,7 +63,7 @@
   line-height: normal;
 }
 
-.artic-product-chiller-section .chiller-text-sectn p:first-child {
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .top-text {
   color: #3177b4;
   font-family: Lato;
   margin-bottom: 8px;
@@ -70,7 +74,7 @@
   text-transform: uppercase;
 }
 
-.artic-product-chiller-section .chiller-text-sectn p:last-child {
+.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .middle-text {
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -80,7 +84,7 @@
   line-height: normal;
 }
 
-.artic-product-chiller-section img {
+.articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
   height: inherit;
   width: auto;
   -o-object-fit: cover;
@@ -88,34 +92,34 @@
 }
 
 @media (max-width: 600px) {
-  .artic-product-chiller-section .chiller-text-sectn p:first-child {
+  .articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .top-text {
     font-size: 14px;
     margin-bottom: 4px;
   }
 
-  .artic-product-chiller-section .chiller-text-sectn p:last-child {
+  .articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .middle-text {
     margin-bottom: 7px;
     font-size: 11px;
   }
-  .artic-product-chiller-section .chiller-section button {
-    width: 140px;
+  .articpodstore-chiller-section-v1-test .chiller-section button {
+    max-width: 140px;
     height: 36px;
     font-size: 12px;
   }
 
-  .artic-product-chiller-section img {
+  .articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
     -o-object-fit: cover;
     object-fit: cover;
-    width: 100px;
+    max-width: 100px;
     max-height: 100%;
   }
 }
 
 @media (max-width: 360px) {
-  .artic-product-chiller-section img {
+  .articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
     -o-object-fit: cover;
     object-fit: cover;
-    width: 70px;
+    max-width: 70px;
     max-height: 100%;
   }
 }
