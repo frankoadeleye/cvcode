@@ -1,56 +1,52 @@
-.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: Mulish !important;
-}
-
-.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor option {
-  color: #000;
-  font-family: Mulish !important;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
-  width: 100%;
-  height: 47px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  border-radius: 2px;
-  background: #e7ccbd;
-  padding-left: 29px !important;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath d='M6.5 8.90912L0.00480938 0.727301L12.9952 0.727301L6.5 8.90912Z' fill='black'/%3E%3C/svg%3E");
-  background-repeat: no-repeat, repeat;
-  background-position: right 1.8em top 50%, 0 0;
-  background-size: 0.65em auto, 100%;
-}
-
-.joyorganic-flavor-selector-v1-test .selector-dropdown.flavor::-ms-expand,
-.joyorganic-flavor-selector-v1-test .rebuy-product-options {
-  display: none;
+.rebuy-product-options {
+  display: block;
 }
 
 .joyorganic-flavor-selector-v1-test fieldset.js.product-form__input {
-  display: none !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-@media (min-width: 768px) {
-  .joyorganic-flavor-selector-v1-test .selector-dropdown {
+@media (max-width: 767px) {
+  .joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Mulish !important;
+  }
+
+  .joyorganic-flavor-selector-v1-test .selector-dropdown.flavor option {
+    color: #000;
+    font-family: Mulish !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .joyorganic-flavor-selector-v1-test .selector-dropdown.flavor {
+    width: 100%;
+    height: 47px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #e7ccbd;
+    padding-left: 29px !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath d='M6.5 8.90912L0.00480938 0.727301L12.9952 0.727301L6.5 8.90912Z' fill='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.8em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+  }
+
+  .joyorganic-flavor-selector-v1-test .selector-dropdown.flavor::-ms-expand,
+  .joyorganic-flavor-selector-v1-test .rebuy-product-options {
     display: none;
   }
 
-  .rebuy-product-options {
-    display: block;
-  }
-
   .joyorganic-flavor-selector-v1-test fieldset.js.product-form__input {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: none !important;
   }
 }
