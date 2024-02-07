@@ -1,0 +1,26 @@
+.ashanderie-cart-v1-test .shipping-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 24px 20px 24px;
+  }
+  
+  .ashanderie-cart-v1-test .shipping-info .shipping-info-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    color: #000000;
+    font-size: 12px;
+  }
+  
+  .ashanderie-cart-v1-test .shipping-info .shipping-info-item img{
+    max-width: 100%;
+    height: 100%;
+  }
