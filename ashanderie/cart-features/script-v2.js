@@ -1,7 +1,7 @@
 (() => {
   "use strict";
  const testInfo = {
-    className: "ashanderie-cart-v1-test",
+    className: "ashanderie-cart-v2-test",
     debug: 0,
     testName: "cart-features",
     testVersion: "0.0.2",

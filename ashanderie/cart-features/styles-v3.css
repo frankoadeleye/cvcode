@@ -1,14 +1,14 @@
-.ashanderie-cart-v1-test .cart__checkout-wrapper .text-center img.checkout-footer-options{
+.ashanderie-cart-v3-test .cart__checkout-wrapper .text-center img.checkout-footer-options{
   width: 100%;
   margin-top: 20px;
   height: auto;
 }
 
-.ashanderie-cart-v1-test .cart__checkout-wrapper .text-center{
+.ashanderie-cart-v3-test .cart__checkout-wrapper .text-center{
 	width: 100%;
 }
 
-.ashanderie-cart-v1-test .shipping-info{
+.ashanderie-cart-v3-test .shipping-info{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@
   margin: 0px 24px 20px 24px;
   }
   
-  .ashanderie-cart-v1-test .shipping-info .shipping-info-item{
+  .ashanderie-cart-v3-test .shipping-info .shipping-info-item{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30,7 +30,7 @@
     font-size: 12px;
   }
   
-  .ashanderie-cart-v1-test .shipping-info .shipping-info-item img{
+  .ashanderie-cart-v3-test .shipping-info .shipping-info-item img{
     max-width: 100%;
     height: 100%;
   }
