@@ -45,30 +45,37 @@
               {
                 value: "PANTS & SHORTS",
                 id: "pants-and-shorts",
+                url: "https://ashanderie.com/collections/pants-and-jeans?filter.v.availability=1",
               },
               {
                 value: "SALE ITEMS",
                 id: "sale-item",
+                url: "https://ashanderie.com/collections/sale-items",
               },
               {
                 value: "LOUNGEWEAR",
                 id: "loungewear",
+                url: "https://ashanderie.com/collections/loungewear?filter.v.availability=1",
               },
               {
                 value: "SWEATERS & OUTERWEAR",
                 id: "sweaters-and-outwear",
+                url: "https://ashanderie.com/collections/sweaters-outerwear?filter.v.availability=1",
               },
               {
                 value: "ATHLEISURE",
                 id: "athleisure",
+                url: "https://ashanderie.com/collections/activewear-collection?filter.v.availability=1",
               },
               {
                 value: "BUTTON DOWN SHIRTS",
                 id: "button-down-shirts",
+                url: "https://ashanderie.com/collections/everyday-shirts?filter.v.availability=1",
               },
               {
                 value: "T-SHIRTS, HENLEYS, & POLOS",
                 id: "t-shirts-and-polos",
+                url: "https://ashanderie.com/collections/t-shirts-henleys-polos?filter.v.availability=1",
               },
             ];
 
@@ -114,10 +121,19 @@
             function handler(event) {
               convert.$(`.tile-item`).removeClass("active");
               var target = convert.$(event.target);
-              console.log(target);
+              console.log("this is target", target);
               if (target.is(".tile-item")) {
                 target.addClass("active");
               }
+            }
+
+            for (let i = 0; i < tilesArray.length; i++) {
+              if (tilesArray[i].url === window.location.href) {
+                convert.$(`#${tilesArray[i].id}`).addClass("active");
+              }
+              convert.$(`#${tilesArray[i].id}`).on("click", function () {
+                window.location.href = tilesArray[i].url;
+              });
             }
           });
         };
