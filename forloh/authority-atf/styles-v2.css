@@ -1,4 +1,4 @@
-.fl-26-test .shopify-section.index-section--hero .authority-atf-main{
+.fl-26-test .shopify-section.index-section .authority-atf-main{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-.fl-26-test .shopify-section.index-section--hero .authority-atf-container{
+.fl-26-test .shopify-section.index-section .authority-atf-container{
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@
   scrollbar-width: 0px;
 }
 
-.fl-26-test .shopify-section.index-section--hero .authority-atf-container .authority-atf-wrap{
+.fl-26-test .shopify-section.index-section .authority-atf-container .authority-atf-wrap{
   min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,14 +47,14 @@
           animation: move-left-to-right linear 150.5s infinite;
 }
 
-.fl-26-test .shopify-section.index-section--hero .authority-atf-main span{
+.fl-26-test .shopify-section.index-section .authority-atf-main span{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-width: 113px;
 }
 
-.fl-26-test .shopify-section.index-section--hero .authority-atf-container img{
+.fl-26-test .shopify-section.index-section .authority-atf-container img{
   width: 70px !important;
   height: auto;
   -o-object-fit: contain;
@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 768px){
-  .fl-26-test .shopify-section.index-section--hero .authority-atf-container img{
+  .fl-26-test .shopify-section.index-section .authority-atf-container img{
     width: 50px !important;
   }
 }

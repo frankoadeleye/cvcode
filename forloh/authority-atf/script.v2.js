@@ -4,7 +4,7 @@
     className: "fl-26-test",
     debug: 0,
     testName: "authority-atf",
-    testVersion: "0.0.1",
+    testVersion: "0.0.2",
   };
   const convertInterval = setInterval(() => {
     if (typeof convert != "undefined") {
@@ -52,8 +52,8 @@
           }
 
           let autATFContainer = `<div class="authority-atf-main"><span>As Seen in:</span><div class="authority-atf-container"><div class="authority-atf-wrap">${replicateArray(platformArray, 20).map(item=>{
-                                    return `<img src={${item.url}} alt="${item.name}" />`}).join("\n")}</div></div></div>`;
-          convert.$('.shopify-section.index-section--hero').append(autATFContainer);
+                                    return `<img src="${item.url}" alt="${item.name}" />`}).join("\n")}</div></div></div>`;
+          convert.$('.shopify-section.index-section:nth-child(4)').prepend(autATFContainer);
           
         };
 
