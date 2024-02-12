@@ -52,7 +52,7 @@
 
           let autATFContainer = `<div class="authority-atf-main"><span>As Seen in:</span><div class="authority-atf-container"><div class="authority-atf-wrap">${replicateArray(platformArray, 20).map(item=>{
                                     return `<img src="${item.url}" alt="${item.name}" />`}).join("\n")}</div></div></div>`;
-          convert.$('.shopify-section.index-section--hero').append(autATFContainer);
+          convert.$('.shopify-section.index-section--hero:nth-child(1)').append(autATFContainer);
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {
