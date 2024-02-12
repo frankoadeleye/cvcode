@@ -42,7 +42,7 @@
         const loadTest = () => {
 
           let platformArray = [
-            {name: 'cnn-logo',url: 'https://iili.io/J1NiVIe.png'},{name: 'bow-hunter-logo',url: 'https://iili.io/J1NiNrQ.png'},{name: 'fox-and-friends',url: 'https://iili.io/J1Ni8p1.png'},{name: 'game-and-fish',url: 'https://iili.io/J1Nii4R.png'},{name: 'news-max',url: 'https://iili.io/J1NiQYN.png'},{name: 'mens-journal',url: 'https://iili.io/J1NipQs.png'},
+            {name: 'cnn-logo',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/cnn-forloh.png'},{name: 'bow-hunter-logo',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/bowhunter-forloh-no-bg.png'},{name: 'fox-and-friends',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/foxandfriends-no-bg.png'},{name: 'game-and-fish',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/Gameandfish-bo-bg.png'},{name: 'news-max',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/news-max (1).png'},{name: 'mens-journal',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/mens-journal_compressed.png'},
           ];
 
           function replicateArray(array, numOfTimes) {
@@ -54,17 +54,10 @@
           let autATFContainer = `<div class="authority-atf-main"><span>As Seen in:</span><div class="authority-atf-container"><div class="authority-atf-wrap">${replicateArray(platformArray, 20).map(item=>{
                                     return `<img src="${item.url}" alt="${item.name}" />`}).join("\n")}</div></div></div>`;
           convert.$('.shopify-section.index-section:nth-child(4)').prepend(autATFContainer);
-          
         };
-
 
         if (!convert.$("body").hasClass(testInfo.className)) {
           convert.$("body").addClass(testInfo.className);
-          convert
-            .$(
-              '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>'
-            )
-            .appendTo("head");
           loadTest();
         }
       });
