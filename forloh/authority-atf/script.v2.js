@@ -39,17 +39,18 @@
             });
           });
         };
+        
+        const replicateArray = (array, numOfTimes)=>{
+          let arrays = Array.apply(null, new Array(numOfTimes)); 
+            arrays = arrays.map(function() { return array });
+            return [].concat.apply([], arrays);
+        }
+        
         const loadTest = () => {
 
           let platformArray = [
             {name: 'cnn-logo',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/cnn-forloh.png'},{name: 'bow-hunter-logo',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/bowhunter-forloh-no-bg.png'},{name: 'fox-and-friends',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/foxandfriends-no-bg.png'},{name: 'game-and-fish',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/Gameandfish-bo-bg.png'},{name: 'news-max',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/news-max (1).png'},{name: 'mens-journal',url: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/mens-journal_compressed.png'},
           ];
-
-          function replicateArray(array, numOfTimes) {
-            let arrays = Array.apply(null, new Array(numOfTimes)); 
-            arrays = arrays.map(function() { return array });
-            return [].concat.apply([], arrays);
-          }
 
           let autATFContainer = `<div class="authority-atf-main"><span>As Seen in:</span><div class="authority-atf-container"><div class="authority-atf-wrap">${replicateArray(platformArray, 20).map(item=>{
                                     return `<img src="${item.url}" alt="${item.name}" />`}).join("\n")}</div></div></div>`;
