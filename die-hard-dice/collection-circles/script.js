@@ -41,11 +41,11 @@
         };
         const loadTest = () => {
           const collectionData = [
-            {title: "Mithril",url: "https://iili.io/J1sox4f.png", link: "https://www.dieharddice.com/collections/mithril"},
-            {title: "New Dice",url: "https://iili.io/J1socCu.png",link: "https://www.dieharddice.com/collections/new"},
-            {title: "Metal",url: "https://iili.io/J1soVyB.png",link: "https://www.dieharddice.com/collections/metal-dnd-dice"},
-            {title: "Polymer",url: "https://iili.io/J1soe6J.png",link: "https://www.dieharddice.com/collections/polymer-dnd-dice"},
-            {title: "Best Selling",url: "https://iili.io/J1sx9t9.png",link: "https://www.dieharddice.com/collections/best-selling-metal-dice"},
+             {title: "Mithril",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/mithril.png", link: "https://www.dieharddice.com/collections/mithril"},
+            {title: "New Dice",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/new dice.png",link: "https://www.dieharddice.com/collections/new"},
+            {title: "Metal",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/metal.png",link: "https://www.dieharddice.com/collections/metal-dnd-dice"},
+            {title: "Polymer",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/polymer.png",link: "https://www.dieharddice.com/collections/polymer-dnd-dice"},
+            {title: "Best Selling",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/best selling.png",link: "https://www.dieharddice.com/collections/best-selling-metal-dice"},
           ];
           const CollectionContainer = `<div class="collection__circles__wrap">
             ${collectionData.map((item) => {

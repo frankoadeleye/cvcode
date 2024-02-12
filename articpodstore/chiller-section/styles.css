@@ -1,18 +1,6 @@
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn p {
-  margin: 0;
-  padding: 0;
-}
-
-.articpodstore-chiller-section-v1-test
-  div[data-name="Right click on this, and choose Edit Code."] {
-  display: none;
-}
-
-.articpodstore-chiller-section-v1-test .chiller-section {
+.ap-24-test .chiller-section {
   width: 100%;
-  height: 140px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  min-height: 125px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -22,11 +10,18 @@
   background: #efefef;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  align-items: center;
   justify-content: space-between;
   margin: 10px 0px;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn {
+.ap-24-test
+  .item-content
+  div[data-name="Right click on this, and choose Edit Code."] {
+  display: none;
+}
+
+.ap-24-test .chiller-section .chiller-text-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,17 +33,13 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: inherit;
-  padding: 10px 0px 10px 11px;
+  padding: 10px 0px 10px 10px;
 }
 
-.articpodstore-chiller-section-v1-test
-  .chiller-section
-  .chiller-text-sectn
-  button {
+.ap-24-test .chiller-section a {
   max-width: 170px;
+  width: 100%;
   height: 41px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   outline-style: none;
   border: 1px solid #222323;
   -webkit-box-sizing: border-box;
@@ -56,27 +47,19 @@
   border-radius: 5px;
   background: #222323;
   color: #fff;
-}
-
-.articpodstore-chiller-section-v1-test
-  .chiller-section
-  .chiller-text-sectn
-  button
-  a {
-  color: #fff;
-  font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.articpodstore-chiller-section-v1-test
-  .chiller-section
-  .chiller-text-sectn
-  .top-text {
+.ap-24-test .chiller-section a:hover {
+  opacity: 0.6;
+}
+.ap-24-test .chiller-text-section > h2 {
   color: #3177b4;
-  font-family: Lato;
   margin-bottom: 8px;
   font-size: 18px;
   font-style: normal;
@@ -84,68 +67,28 @@
   line-height: normal;
   text-transform: uppercase;
 }
-
-.articpodstore-chiller-section-v1-test
-  .chiller-section
-  .chiller-text-sectn
-  .middle-text {
+.ap-24-test .chiller-text-section > p {
   color: #000;
-  font-family: Lato;
   font-size: 14px;
   font-style: normal;
   margin-bottom: 17px;
   font-weight: 400;
   line-height: normal;
 }
-
-.articpodstore-chiller-section-v1-test
-  .chiller-section
-  img[alt="chiller-prod-image"] {
-  height: inherit;
-  width: auto;
+.ap-24-test .chiller-section img {
+  max-width: 140px;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 @media (max-width: 600px) {
-  .articpodstore-chiller-section-v1-test
-    .chiller-section
-    .chiller-text-sectn
-    .top-text {
-    font-size: 14px;
-    margin-bottom: 4px;
-  }
-
-  .articpodstore-chiller-section-v1-test
-    .chiller-section
-    .chiller-text-sectn
-    .middle-text {
-    margin-bottom: 7px;
-    font-size: 11px;
-  }
-  .articpodstore-chiller-section-v1-test .chiller-section button {
+  .ap-24-test .chiller-section button {
     max-width: 140px;
+    width: 100%;
     height: 36px;
     font-size: 12px;
   }
-
-  .articpodstore-chiller-section-v1-test
-    .chiller-section
-    img[alt="chiller-prod-image"] {
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-width: 100px;
-    max-height: 100%;
-  }
-}
-
-@media (max-width: 360px) {
-  .articpodstore-chiller-section-v1-test
-    .chiller-section
-    img[alt="chiller-prod-image"] {
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-width: 70px;
-    max-height: 100%;
+  .ap-24-test .chiller-section img {
+    max-width: 120px;
   }
 }
