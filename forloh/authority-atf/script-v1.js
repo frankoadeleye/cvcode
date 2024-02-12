@@ -55,14 +55,8 @@
           convert.$('.shopify-section.index-section--hero').append(autATFContainer);
         };
 
-
         if (!convert.$("body").hasClass(testInfo.className)) {
           convert.$("body").addClass(testInfo.className);
-          convert
-            .$(
-              '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>'
-            )
-            .appendTo("head");
           loadTest();
         }
       });

@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-.articpodstore-chiller-section-v1-test div[data-name='Right click on this, and choose Edit Code.']{
-	display: none;
+.articpodstore-chiller-section-v1-test
+  div[data-name="Right click on this, and choose Edit Code."] {
+  display: none;
 }
 
 .articpodstore-chiller-section-v1-test .chiller-section {
@@ -40,7 +41,10 @@
   padding: 10px 0px 10px 11px;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn button {
+.articpodstore-chiller-section-v1-test
+  .chiller-section
+  .chiller-text-sectn
+  button {
   max-width: 170px;
   height: 41px;
   -ms-flex-negative: 0;
@@ -54,7 +58,11 @@
   color: #fff;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn button a {
+.articpodstore-chiller-section-v1-test
+  .chiller-section
+  .chiller-text-sectn
+  button
+  a {
   color: #fff;
   font-family: Lato;
   font-size: 14px;
@@ -63,7 +71,10 @@
   line-height: normal;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .top-text {
+.articpodstore-chiller-section-v1-test
+  .chiller-section
+  .chiller-text-sectn
+  .top-text {
   color: #3177b4;
   font-family: Lato;
   margin-bottom: 8px;
@@ -74,7 +85,10 @@
   text-transform: uppercase;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .middle-text {
+.articpodstore-chiller-section-v1-test
+  .chiller-section
+  .chiller-text-sectn
+  .middle-text {
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -84,7 +98,9 @@
   line-height: normal;
 }
 
-.articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
+.articpodstore-chiller-section-v1-test
+  .chiller-section
+  img[alt="chiller-prod-image"] {
   height: inherit;
   width: auto;
   -o-object-fit: cover;
@@ -92,12 +108,18 @@
 }
 
 @media (max-width: 600px) {
-  .articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .top-text {
+  .articpodstore-chiller-section-v1-test
+    .chiller-section
+    .chiller-text-sectn
+    .top-text {
     font-size: 14px;
     margin-bottom: 4px;
   }
 
-  .articpodstore-chiller-section-v1-test .chiller-section .chiller-text-sectn .middle-text {
+  .articpodstore-chiller-section-v1-test
+    .chiller-section
+    .chiller-text-sectn
+    .middle-text {
     margin-bottom: 7px;
     font-size: 11px;
   }
@@ -107,7 +129,9 @@
     font-size: 12px;
   }
 
-  .articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
+  .articpodstore-chiller-section-v1-test
+    .chiller-section
+    img[alt="chiller-prod-image"] {
     -o-object-fit: cover;
     object-fit: cover;
     max-width: 100px;
@@ -116,7 +140,9 @@
 }
 
 @media (max-width: 360px) {
-  .articpodstore-chiller-section-v1-test .chiller-section img[alt='chiller-prod-image'] {
+  .articpodstore-chiller-section-v1-test
+    .chiller-section
+    img[alt="chiller-prod-image"] {
     -o-object-fit: cover;
     object-fit: cover;
     max-width: 70px;
