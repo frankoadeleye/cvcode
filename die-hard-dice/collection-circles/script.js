@@ -40,8 +40,20 @@
           });
         };
         const loadTest = () => {
+          const collectionData = [
+            {title: "Mithril",url: "https://iili.io/J1sox4f.png", link: "https://www.dieharddice.com/collections/mithril"},
+            {title: "New Dice",url: "https://iili.io/J1socCu.png",link: "https://www.dieharddice.com/collections/new"},
+            {title: "Metal",url: "https://iili.io/J1soVyB.png",link: "https://www.dieharddice.com/collections/metal-dnd-dice"},
+            {title: "Polymer",url: "https://iili.io/J1soe6J.png",link: "https://www.dieharddice.com/collections/polymer-dnd-dice"},
+            {title: "Best Selling",url: "https://iili.io/J1sx9t9.png",link: "https://www.dieharddice.com/collections/best-selling-metal-dice"},
+          ];
+          const CollectionContainer = `<div class="collection__circles__wrap">
+            ${collectionData.map((item) => {
+                return `<a href="${item.link}" class="item"><img src="${item.url}"  alt="${item.title}" /><div class="text">${item.title}</div></a>`;}).join("\n")}`;
 
-        
+          if (window.matchMedia("(max-width: 767px)").matches && window.location.pathname == "/") {
+            convert.$(".dhd-21-test #main .shopify-section:first-child").prepend(CollectionContainer);
+          }
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {
