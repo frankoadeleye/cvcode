@@ -1,0 +1,24 @@
+.dris-24-test
+  .ss__result.item.product.product-item
+  .product.details.product-item-details
+  .item-price
+  .product-label {
+  margin: auto;
+  font-size: inherit;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid transparent;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  top: -7px;
+}
