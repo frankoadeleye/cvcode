@@ -1,68 +1,95 @@
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container{
+.dhd-22-test .shopify-section #collection-utilities .usp-icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: -30px;
 }
 
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item{
+.dhd-22-test
+  .shopify-section
+  #collection-utilities
+  .usp-icons-container
+  .usp-icon-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   padding: 10px 20px;
 }
 
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item img{
+.dhd-22-test
+  .shopify-section
+  #collection-utilities
+  .usp-icons-container
+  .usp-icon-item
+  img {
   width: 32px;
   height: 32px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item .text{
+.dhd-22-test
+  .shopify-section
+  #collection-utilities
+  .usp-icons-container
+  .usp-icon-item
+  .text {
   text-align: center;
   max-width: 150px;
 }
 
-@media (max-width: 500px){
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item{
-  padding: 10px 10px;
-}
-}
-
-@media (max-width: 420px){
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item{
-  padding: 5px 0px;
-}
+@media (max-width: 500px) {
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item {
+    padding: 10px 10px;
+  }
 }
 
-@media (max-width: 380px){
-	.dnd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item .text{
-  font-size: 12px;
+@media (max-width: 420px) {
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item {
+    padding: 5px 0px;
+  }
 }
-.dnd-22-test .shopify-section #collection-utilities .usp-icons-container{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
-}
+
+@media (max-width: 380px) {
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item
+    .text {
+    font-size: 12px;
+  }
+  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
 }

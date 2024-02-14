@@ -41,18 +41,46 @@
         };
         const loadTest = () => {
           const collectionData = [
-             {title: "Mithril",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/mithril.png", link: "https://www.dieharddice.com/collections/mithril"},
-            {title: "New Dice",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/new dice.png",link: "https://www.dieharddice.com/collections/new"},
-            {title: "Metal",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/metal.png",link: "https://www.dieharddice.com/collections/metal-dnd-dice"},
-            {title: "Polymer",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/polymer.png",link: "https://www.dieharddice.com/collections/polymer-dnd-dice"},
-            {title: "Best Selling",url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/best selling.png",link: "https://www.dieharddice.com/collections/best-selling-metal-dice"},
+            {
+              title: "Mithril",
+              url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/mithril.png",
+              link: "https://www.dieharddice.com/collections/mithril",
+            },
+            {
+              title: "New Dice",
+              url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/new dice.png",
+              link: "https://www.dieharddice.com/collections/new",
+            },
+            {
+              title: "Metal",
+              url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/metal.png",
+              link: "https://www.dieharddice.com/collections/metal-dnd-dice",
+            },
+            {
+              title: "Polymer",
+              url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/polymer.png",
+              link: "https://www.dieharddice.com/collections/polymer-dnd-dice",
+            },
+            {
+              title: "Best Selling",
+              url: "https://cdn-3.convertexperiments.com/uf/1004931/10041718/best selling.png",
+              link: "https://www.dieharddice.com/collections/best-selling-metal-dice",
+            },
           ];
           const CollectionContainer = `<div class="collection__circles__wrap">
-            ${collectionData.map((item) => {
-                return `<a href="${item.link}" class="item"><img src="${item.url}"  alt="${item.title}" /><div class="text">${item.title}</div></a>`;}).join("\n")}`;
+            ${collectionData
+              .map((item) => {
+                return `<a href="${item.link}" class="item"><img src="${item.url}"  alt="${item.title}" /><div class="text">${item.title}</div></a>`;
+              })
+              .join("\n")}`;
 
-          if (window.matchMedia("(max-width: 767px)").matches && window.location.pathname == "/") {
-            convert.$(".dhd-21-test #main .shopify-section:first-child").prepend(CollectionContainer);
+          if (
+            window.matchMedia("(max-width: 767px)").matches &&
+            window.location.pathname == "/"
+          ) {
+            convert
+              .$(".dhd-21-test #main .shopify-section:first-child")
+              .prepend(CollectionContainer);
           }
         };
 

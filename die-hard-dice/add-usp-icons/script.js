@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "dnd-22-test",
+    className: "dhd-22-test",
     debug: 0,
     testName: "add-usb-icons",
     testVersion: "0.0.1",
@@ -41,16 +41,32 @@
         };
 
         const uspIconsData = [
-          {imgSrc: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-cup.png',text: 'No Compromises In Quality'},
-          {imgSrc: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-heart.png',text: '100% Satisfaction Guarantee'},
-          { imgSrc: 'https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-bus.png',text: 'Free Shipping Over $40 in USA'},
-        ]
+          {
+            imgSrc:
+              "https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-cup.png",
+            text: "No Compromises In Quality",
+          },
+          {
+            imgSrc:
+              "https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-heart.png",
+            text: "100% Satisfaction Guarantee",
+          },
+          {
+            imgSrc:
+              "https://cdn-3.convertexperiments.com/uf/1004931/10041718/dhd-bus.png",
+            text: "Free Shipping Over $40 in USA",
+          },
+        ];
 
-        const USPIcons = `<div class="usp-icons-container">${uspIconsData.map((item)=>{return `<span class="usp-icon-item"><img src="${item.imgSrc}" alt="${item.text}" /> <span class="text">${item.text}</span></span>`}).join("\n")}</div>`;
+        const USPIcons = `<div class="usp-icons-container">${uspIconsData
+          .map((item) => {
+            return `<span class="usp-icon-item"><img src="${item.imgSrc}" alt="${item.text}" /> <span class="text">${item.text}</span></span>`;
+          })
+          .join("\n")}</div>`;
 
         const loadTest = () => {
           waitForElement(".collection-header").then(() => {
-            convert.$('#collection-utilities').prepend(USPIcons);
+            convert.$("#collection-utilities").prepend(USPIcons);
           });
         };
 
