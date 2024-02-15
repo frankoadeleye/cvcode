@@ -43,7 +43,7 @@
         const loadTest = () => {
            if (window.matchMedia("(max-width: 767px)").matches) {
            
-              if($('.page-wrapper #maincontent #searchspring-content .ss__content .ss-slidebout-button.ss-isMobile').length){
+              if(convert.$('.page-wrapper #maincontent #searchspring-content .ss__content .ss-slidebout-button.ss-isMobile').length){
                 var scrollvalue = 0;
               let stickyOptions = `<div class="sticky-options-wrap">
               <div class="button">FILTER YOUR OPTIONS</div></div>`
