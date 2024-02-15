@@ -82,8 +82,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
-  margin-bottom: 25px;
   flex-flow: row wrap;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .swiper{

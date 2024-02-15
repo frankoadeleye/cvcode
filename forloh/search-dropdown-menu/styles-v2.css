@@ -1,0 +1,47 @@
+.fl-22-5-test .snize-ac-results.snize-new-design {
+	border: 4px solid red;
+	display: none !important;
+}
+
+.fl-22-5-test .snize-ac-results-columns{
+	display: none !important;
+}
+
+.fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons{
+	display: flex;
+}
+
+.fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper{
+  display: flex;
+  max-width: 350px;
+  position: relative;
+}
+
+.fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper img{
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+
+.fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper .search-bar{
+  max-width: 350px;
+  height: 40px;
+  font-family: Tinos;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  border: 1px solid #B6B7B7;
+  text-align: left;
+  padding-left: 40px;
+  background: #ffffff !important;
+}
+
+@media (min-width: 1024px){
+
+  .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .site-nav__link.site-nav__link--icon.small--hide.js-search-header{
+    display: none;
+  }
+}

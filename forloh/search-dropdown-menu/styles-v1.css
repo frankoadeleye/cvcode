@@ -1,0 +1,5 @@
+@media (max-width: 767px){
+  .fl-22-test .snize-ac-results-content .snize-ac-results-list, .fl-22-test .snize-ac-results-content .snize-ac-results-list-last, .fl-22-test .snize-ac-results-content .snize-nothing-found.snize-removable{
+    display: none;
+  }
+}
