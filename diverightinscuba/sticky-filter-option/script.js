@@ -42,7 +42,8 @@
 
         const loadTest = () => {
            if (window.matchMedia("(max-width: 767px)").matches) {
-           
+
+            if (!convert.$(".subcat_list .subcat_list_inner")[0]){
               if(convert.$('.page-wrapper #maincontent #searchspring-content .ss__content .ss-slidebout-button.ss-isMobile').length){
                 var scrollvalue = 0;
               let stickyOptions = `<div class="sticky-options-wrap">
@@ -52,15 +53,14 @@
               convert.$('.page-wrapper .page-header .sticky-options-wrap').hide();
               convert.$(window).scroll(function () {
                 if ((convert.$(window).scrollTop() - scrollvalue) > 300) {convert.$('.page-wrapper .page-header .sticky-options-wrap').show();
-              }else{convert.$('.page-wrapper .page-header .sticky-options-wrap').hide();
-              }
-        
-           });
+                  }else{convert.$('.page-wrapper .page-header .sticky-options-wrap').hide();
+                  }
+                });
               }else{
                 convert.$('.page-wrapper .page-header .sticky-options-wrap').remove();
               }
-             
-       }
+            }
+         }
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {
