@@ -57,7 +57,7 @@
               "\n")}</div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div>`;
 
           jQuery.getScript("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",() => {
-              new Swiper(".mySwiper", {slidesPerView: 3,spaceBetween: 20,navigation: {nextEl: ".swiper-button-next",prevEl: ".swiper-button-prev",},});});
+              new Swiper(".mySwiper", {slidesPerView: 3,spaceBetween: 20,navigation: {nextEl: ".swiper-button-next",prevEl: ".swiper-button-prev",}, breakpoints: {310: {slidesPerView: 2,spaceBetween: 10, },500: {slidesPerView: 3, spaceBetween: 10,},},});});
 
           if (window.matchMedia("(max-width: 767px)").matches) {
             convert.$(".collection-content").prepend(slider);
