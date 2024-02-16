@@ -54,7 +54,7 @@
 
           const slider = `<div class="swiper mySwiper"><div class="swiper-wrapper tiles-wrapper">${tilesArray
             .map((tile) => {return `<div class="tile-item swiper-slide" id="${tile.id}">${tile.value}</div>`;}).join(
-              "\n")}</div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div>`;
+              "\n")}</div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div><div class="left-abs"></div><div class="right-abs"></div></div>`;
 
           jQuery.getScript("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",() => {
               new Swiper(".mySwiper", {slidesPerView: 3,spaceBetween: 20,navigation: {nextEl: ".swiper-button-next",prevEl: ".swiper-button-prev",}, breakpoints: {310: {slidesPerView: 2,spaceBetween: 10, },500: {slidesPerView: 3, spaceBetween: 10,},},});});

@@ -3,8 +3,8 @@
   const testInfo = {
     className: "fl-22-5-test",
     debug: 0,
-    testName: "search-dropdown-menu",
-    testVersion: "0.0.1",
+    testName: "search-dropdown-menu-desktop",
+    testVersion: "0.0.2",
   };
   const convertInterval = setInterval(() => {
     if (typeof convert != "undefined") {

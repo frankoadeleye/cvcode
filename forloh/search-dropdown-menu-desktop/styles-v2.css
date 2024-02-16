@@ -1,12 +1,3 @@
-.fl-22-5-test .snize-ac-results.snize-new-design {
-	border: 4px solid red;
-	display: none !important;
-}
-
-.fl-22-5-test .snize-ac-results-columns{
-	display: none !important;
-}
-
 .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons{
 	display: flex;
 }

@@ -37,6 +37,27 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.ae-7-test .main-content .swiper .right-abs{
+  position: absolute;
+  height: 50px;
+  width: 40px;
+ border: 2px solid #fff;
+  right: 0px;
+  z-index: 9;
+  background: #fff;
+}
+
+.ae-7-test .main-content .swiper .left-abs{
+  position: absolute;
+  height: 50px;
+  width: 40px;
+  border: 2px solid #fff;
+  left: 0px;
+  z-index: 9;
+  background: #fff;
 }
 
 .ae-7-test .main-content .swiper .swiper-button-next,
@@ -50,6 +71,7 @@
   border: 4px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          z-index: 9999 !important;
 }
 
 .ae-7-test .main-content .swiper .swiper-button-next {
