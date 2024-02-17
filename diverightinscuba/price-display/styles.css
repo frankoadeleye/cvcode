@@ -1,0 +1,391 @@
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .affirm-as-low-as,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .product-info-price
+  span.price,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .product-info-price
+  .old-price,.dris-26-test .page-wrapper .product-media-and-info span.price:first-child {
+  display: none !important;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: inherit;
+  flex-direction: column;
+  border: 1px solid #6d6d6d;
+  width: 229px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box
+  .title,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #1f2435;
+  font-weight: 700;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box
+  .price-section,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .price-section {
+  display: flex;
+  gap: 5px;
+  margin: auto;
+  align-items: center;
+  font-family: inherit;
+  justify-content: center;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box
+  .price-section
+  span:first-child,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .price-section
+  span:first-child {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #1f2435;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box
+  .price-section
+  span:last-child {
+  font-family: inherit;
+  font-size: 15px;
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .price-section
+  img {
+  width: 64px;
+  height: 48px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .buy-now-box
+  .discount,
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .see-if-qualify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: inherit;
+  color: #1f2435;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .see-if-qualify {
+  color: #5597d1;
+  font-family: inherit;
+}
+
+.dris-26-test
+  .page-wrapper
+  .product-media-and-info
+  .product-info-main
+  .page-title-wrapper.product
+  .box-container
+  .pay-monthly-box
+  .see-if-qualify:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box {
+    width: 160px;
+    padding: 5px;
+    height: 100px;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .price-section
+    span:first-child,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .price-section
+    span:first-child {
+    font-size: 18px;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .price-section
+    span:last-child {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box {
+   width: 135px;
+    height: 100px;
+  }
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .price-section
+    span:first-child,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .price-section
+    span:first-child {
+    font-size: 14px !important;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .price-section
+    span:last-child {
+    font-size: 8px;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .title,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .title {
+    font-size: 10px;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .price-section
+    img {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .discount,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .see-if-qualify {
+    font-size: 10px;
+  }
+
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box {
+    height: 80px;
+  }
+}
