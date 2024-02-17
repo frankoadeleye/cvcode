@@ -3,7 +3,7 @@
   const testInfo = {
     className: "dris-26-test",
     debug: 0,
-    testName: "financing-available-text",
+    testName: "price-display",
     testVersion: "0.0.1",
   };
   const convertInterval = setInterval(() => {
