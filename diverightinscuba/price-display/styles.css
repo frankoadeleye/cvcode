@@ -266,6 +266,25 @@
     span:last-child {
     font-size: 13px;
   }
+  
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .buy-now-box
+    .title,
+  .dris-26-test
+    .page-wrapper
+    .product-media-and-info
+    .product-info-main
+    .page-title-wrapper.product
+    .box-container
+    .pay-monthly-box
+    .title {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 375px) {
