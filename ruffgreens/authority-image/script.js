@@ -47,12 +47,7 @@
               <div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer2.png" alt="reviewer-2" /> <p class="review-text">Comments Section with Brett Cooper</p> </div>
               <div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer3.png" alt="reviewer-3" /> <p class="review-text">The Jesse Kelly Show</p> </div></div>
             </div>`;
-          convert
-            .$(
-              `.section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text`
-            )
-            .append(authImagesSection);
-        };
+          convert.$(`.section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text`).append(authImagesSection)};
 
         if (!convert.$("body").hasClass(testInfo.className)) {
           convert.$("body").addClass(testInfo.className);
