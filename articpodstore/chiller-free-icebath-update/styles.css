@@ -1,3 +1,53 @@
-.ap-28-test .page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"]:first-child{
-  border: 4px solid blue;
+.ap-28-test .page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] .gf_product-prices .new_product_price{
+	vertical-align: middle;
+	font-size: 21px!important;
+    color: #242424!important;
+    font-weight: 700!important;
+}
+
+.ap-28-test .page-container .main-content .wrapper .module-wrap .item-content .gf_column.gf_col_no_tools.gf_col-md-12.gf_swatches-selector.gf_swatches-option1 .gf_swatch_new_variant{
+	height: 90px!important;
+    line-height: 90px!important;
+    width: 90px!important;
+    border-radius: 5px!important;
+    -webkit-box-shadow: 0 0 0 2px #3177b4!important;
+            box-shadow: 0 0 0 2px #3177b4!important;
+    background: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: auto;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #dddcdc;
+    font-size: 16px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    background-image: url(https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png);
+}
+
+.ap-28-test .page-container .main-content .wrapper .module-wrap .item-content .img-holder .gf_product_new_image {
+	display: inline-block!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    max-width: 100%!important;
+    cursor: pointer;
+    background-image: url(https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png);
+}
+
+.ap-28-test #CartPopup .upcart-products-section .upcart-product-image-wrapper.styles_ProductRow__imageWrapper__CgzZq a img[alt="ArcticPod™ Water Chiller for Ice Bath - Water Chiller + ArcticPod™ Ice Bath"]{
+	content:url("https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png");
+}
+
+.ap-28-test .page-container .main-content .grid .cart__row .grid__item a img[alt="ArcticPod™ Water Chiller for Ice Bath - Water Chiller + ArcticPod™ Ice Bath"]{
+	content:url("https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png");
 }

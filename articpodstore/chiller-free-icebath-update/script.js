@@ -41,15 +41,48 @@
         };
 
         const loadTest = () => {
-        	
-         let waterChillerImage = `<img class="gf_product-image gf_featured-image" src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png" data-zoom="//arcticpodstore.com/cdn/shop/files/NEWChillerProductPic_2048x2048.png?v=1704969439" alt="ArcticPod™ Water Chiller for Ice Bath" natural-width="1000" natural-height="1000" width="1000" height="1000" data-width="100%" data-height="auto" style="width: 100%; height: auto">`
-          convert
-            .$(
-              `.`
-            )
-            .remove();
+         let waterChillerImage = `<img class="" src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png" data-zoom="//arcticpodstore.com/cdn/shop/files/NEWChillerProductPic_2048x2048.png?v=1704969439" alt="ArcticPod™ Water Chiller for Ice Bath" natural-width="1000" natural-height="1000" width="1000" height="1000" data-width="100%" data-height="auto" style="width: 100%; height: auto">`;
+         
+         let newPrice = `<span class="new_product_price money gf_gs-text-paragraph-1" itemprop="price" data-price="699.99">$699.99</span>`;
+
+         let newVariant = `<span class="gf_swatch_new_variant gf_selected" data-group="" data-price="0" data-value="Water Chiller + ArcticPod™ Ice Bath"><span style="visibility: hidden;">Water Chiller + ArcticPod™ Ice Bath</span></span>`;
+
+         let updatedCarouselImage = `<img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png" width="1000" height="1000" alt="ArcticPod™ Water Chiller for Ice Bath">`;
+
+          convert.$(`.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"]:first-child img`).remove();
+          
+          convert.$(`.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] span.gf_product-price`).remove();
+          
+          convert.$(`.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] .gf_product-prices`).prepend(newPrice);
             
-            convert.$(`.`).append(waterChillerImage);
+            
+          convert.$(waterChillerImage).insertAfter('.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] .gf_product-badge-anchor');
+
+          convert.$(`.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] h3 a`).attr('href','https://arcticpodstore.com/products/arcticpod%E2%84%A2-water-chiller?variant=46958722056492');
+
+          convert.$(`.page-container .main-content [data-key="row"] .module-wrap .module .item-content div[data-pid="8487939572012"] .img-holder`).attr('href','https://arcticpodstore.com/products/arcticpod%E2%84%A2-water-chiller?variant=46958722056492');
+
+          convert.$(`.page-container .main-content [data-key="row"] [data-current-variant="46958722023724"] form input[data-productid="8487939572012"] button`).attr('disabled');
+
+          setTimeout(() => {
+            convert.$(`.page-container .main-content [data-key="row"] [data-current-variant="46958722023724"] form input[data-productid="8487939572012"]`).attr('value','46958722056492');
+            convert.$(`.page-container .main-content [data-key="row"] [data-current-variant="46958722023724"] form input[data-productid="8487939572012"]`).attr('data-value','46958722056492');
+            convert.$(`.page-container .main-content [data-key="row"] [data-current-variant="46958722023724"] form input[data-productid="8487939572012"] button`).attr('disabled','false');
+          }, 4000);
+
+          let url = window.location.search;
+          if(url.indexOf("variant=46958722056492") !== -1) {
+            convert.$(`.page-container .main-content .wrapper .module-wrap .item-content .gf_column.gf_col_no_tools.gf_col-md-12.gf_swatches-selector.gf_swatches-option1 span`).remove();
+            convert.$(`.page-container .main-content .wrapper .module-wrap .item-content .gf_column.gf_col_no_tools.gf_col-md-12.gf_swatches-selector.gf_swatches-option1`).append(newVariant);
+
+           setTimeout(() => {
+            convert.$(`.page-container .main-content .module-wrap.gf-carousel-loaded .style-slider .gf_product-images-list.gf_product-slider.owl-carousel .owl-stage .owl-item:nth-child(1)`).remove();
+            convert.$(`.page-container .main-content .module-wrap.gf-carousel-loaded .style-slider .gf_product-images-list.gf_product-slider.owl-carousel .owl-stage .owl-item:nth-child(1) .gf_product-image-thumb img`).remove();
+            convert.$(`.page-container .main-content .module-wrap.gf-carousel-loaded .style-slider .gf_product-images-list.gf_product-slider.owl-carousel .owl-stage .owl-item:nth-child(1) .gf_product-image-thumb`).append(updatedCarouselImage);
+            convert.$(`.page-container .main-content .module-wrap.gf-carousel-loaded .style-slider .gf_product-images-list.gf_product-slider.owl-carousel .owl-stage .owl-item:nth-child(1) .gf_product-image-thumb`).attr('data-image','https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png');
+            convert.$(`.page-container .main-content .module-wrap.gf-carousel-loaded .style-slider .gf_product-images-list.gf_product-slider.owl-carousel .owl-stage .owl-item:nth-child(1) .gf_product-image-thumb`).trigger('click');
+           }, 2000);
+          }
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {
