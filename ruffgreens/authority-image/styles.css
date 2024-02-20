@@ -1,10 +1,4 @@
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,14 +10,7 @@
   margin-top: 20px;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .review {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,15 +23,7 @@
   text-align: center;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .review
-  .text {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .review .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,28 +36,11 @@
   font-family: muli, sans-serif;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .review
-  .text
-  b {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .review .text b {
   padding: 0 4px;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .review
-  img {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .review img {
   -o-object-fit: contain;
   object-fit: contain;
   max-width: 72px;
@@ -86,28 +48,13 @@
   object-position: center;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  .reviewer {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap .reviewer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,48 +69,15 @@
   border: 2px solid transparent;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  .reviewer:first-child,
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  .reviewer:last-child {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap .reviewer:first-child, .rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap .reviewer:last-child {
   max-width: 85px;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  .reviewer:nth-child(2) {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap .reviewer:nth-child(2) {
   max-width: 110px;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  img {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap img {
   -o-object-fit: contain;
   object-fit: contain;
   -o-object-position: center;
@@ -172,15 +86,7 @@
   height: auto;
 }
 
-.rg-34-test
-  .section-wrapper
-  .home-newest
-  .dw-topper
-  .new-homepage
-  .dw-top-text
-  .auth_images_section
-  .reviewers-wrap
-  .review-text {
+.rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap .review-text {
   text-align: center;
   font-size: 12px;
   font-family: muli, sans-serif;
@@ -189,27 +95,13 @@
 }
 
 @media (max-width: 700px) {
-  .rg-34-test
-    .section-wrapper
-    .home-newest
-    .dw-topper
-    .new-homepage
-    .dw-top-text
-    .auth_images_section
-    .review {
+  .rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .review {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  .rg-34-test
-    .section-wrapper
-    .home-newest
-    .dw-topper
-    .new-homepage
-    .dw-top-text
-    .auth_images_section
-    .reviewers-wrap {
+  .rg-34-test .section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text .auth-image-section .reviewers-wrap {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

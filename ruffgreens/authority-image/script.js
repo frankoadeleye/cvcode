@@ -41,13 +41,17 @@
         };
 
         const loadTest = () => {
-            let authImagesSection = `<div class="auth_images_section"><div class="review"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/rg-ratings-star.png" alt="ratings" />
+          let authImagesSection = `<div class="auth-image-section"><div class="review"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/rg-ratings-star.png" alt="ratings" />
                 <p class="text"><b>Loved</b> by <b>your favorite</b> voices</p></div>
               <div class="reviewers-wrap"><div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer1.png" alt="reviewer-1" /> <p class="review-text">The Glenn Beck Program</p></div>
               <div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer2.png" alt="reviewer-2" /> <p class="review-text">Comments Section with Brett Cooper</p> </div>
               <div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer3.png" alt="reviewer-3" /> <p class="review-text">The Jesse Kelly Show</p> </div></div>
             </div>`;
-          convert.$(`.section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text`).append(authImagesSection);
+          convert
+            .$(
+              `.section-wrapper .home-newest .dw-topper .new-homepage .dw-top-text`
+            )
+            .append(authImagesSection);
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {

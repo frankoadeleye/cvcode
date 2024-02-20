@@ -40,7 +40,17 @@
           });
         };
 
-        const loadTest = () => {};
+        const loadTest = () => {
+        	
+         let waterChillerImage = `<img class="gf_product-image gf_featured-image" src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/water-chiller-new.png" data-zoom="//arcticpodstore.com/cdn/shop/files/NEWChillerProductPic_2048x2048.png?v=1704969439" alt="ArcticPod™ Water Chiller for Ice Bath" natural-width="1000" natural-height="1000" width="1000" height="1000" data-width="100%" data-height="auto" style="width: 100%; height: auto">`
+          convert
+            .$(
+              `.`
+            )
+            .remove();
+            
+            convert.$(`.`).append(waterChillerImage);
+        };
 
         if (!convert.$("body").hasClass(testInfo.className)) {
           convert.$("body").addClass(testInfo.className);
