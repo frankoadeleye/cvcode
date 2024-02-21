@@ -1,4 +1,4 @@
-.dris-26-test .page-wrapper .product-media-and-info .product-info-main .affirm-as-low-as, .dris-26-test .page-wrapper .product-media-and-info .product-info-main .product-info-price span.price, .dris-26-test .page-wrapper .product-media-and-info .product-info-main .product-info-price .old-price,.dris-26-test .page-wrapper .product-media-and-info span.price:first-child {
+.dris-26-test .page-wrapper .product-media-and-info .product-info-main .affirm-as-low-as, .dris-26-test .page-wrapper .product-media-and-info .product-info-main .product-info-price .price-box .price-container > *:not(.rewards__product-earn-points.rewards__product-points.has-points), .dris-26-test .page-wrapper .product-media-and-info .product-info-main .product-info-price .old-price {
   display: none !important;
 }
 

@@ -55,7 +55,8 @@
 
           convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product").append(BoxContainer);
 
-          if (currentPrice) {convert.$(".page-wrapper .product-media-and-info .product-info-main .product-info-price .old-price span.price-wrapper span.price").remove();
+          if (currentPrice) {
+            convert.$(".page-wrapper .product-media-and-info .product-info-main .product-info-price .old-price span.price-wrapper span.price").remove();
             convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product .buy-now-box .price-section span:first-child" ).append(currentPrice);
           }
 
@@ -69,8 +70,7 @@
 
             convert.$(`.page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product .box-container .pay-monthly-box .see-if-qualify`).click(function () {convert.$(`.page-wrapper .product-media-and-info
                     .product-info-main a.affirm-modal-trigger`).trigger("click");});
-
-            convert.$(".page-wrapper .product-media-and-info .product-info-main .product-info-price").css("display", "none");
+            convert.$(".page-wrapper .product-media-and-info .product-info-main .product-info-price .price-wrapper").css("display", "none");
             convert.$(".page-wrapper .product-media-and-info .product-info-main .affirm-as-low-as").css("display", "none");
           });
         };
