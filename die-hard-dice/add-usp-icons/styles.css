@@ -73,6 +73,7 @@
   
   .dhd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item .text{
   	padding: 0px !important;
+  	font-size: 12px !important;
   }
 }
 
@@ -93,14 +94,6 @@
 }
 
 @media (max-width: 380px) {
-  .dhd-22-test
-    .shopify-section
-    #collection-utilities
-    .usp-icons-container
-    .usp-icon-item
-    .text {
-    font-size: 12px;
-  }
   .dhd-22-test .shopify-section #collection-utilities .usp-icons-container {
     display: -webkit-box;
     display: -ms-flexbox;
