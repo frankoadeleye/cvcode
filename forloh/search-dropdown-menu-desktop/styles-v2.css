@@ -1,23 +1,30 @@
 .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 350px;
+  width: 100%;
   position: relative;
 }
 
 .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper img{
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   position: absolute;
   left: 5px;
   top: 8px;
 }
 
 .fl-22-5-test .page-container .header-item.header-item--icons .site-nav__icons .search-wrapper .search-bar{
-  max-width: 350px;
+  width: 350px;
   height: 40px;
   font-family: Tinos;
   font-size: 15px;

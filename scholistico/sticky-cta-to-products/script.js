@@ -1,9 +1,9 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "dris-25-test",
+    className: "sc-3-test",
     debug: 0,
-    testName: "sticky-filter-options",
+    testName: "sticky-cta-to-products",
     testVersion: "0.0.1",
   };
   const convertInterval = setInterval(() => {
@@ -41,29 +41,35 @@
         };
 
         const loadTest = () => {
-          if (window.matchMedia("(max-width: 767px)").matches) {
-
-            if (!convert.$(".subcat_list .subcat_list_inner")[0]) {
-              if (convert.$('.page-wrapper #maincontent #searchspring-content .ss__content .ss-slidebout-button.ss-isMobile').length) {
-                let stickyOptions = `<div class="sticky-options-wrap">
-                <div class="button">FILTER YOUR OPTIONS</div></div>`
-                convert.$('.page-wrapper .page-header').append(stickyOptions);
-                convert.$(".page-wrapper .page-header .sticky-options-wrap").click(function () { convert.$('.page-wrapper #maincontent #searchspring-content .ss__content .ss-slidebout-button.ss-isMobile').trigger("click") });
-                convert.$('.page-wrapper .page-header .sticky-options-wrap').hide();
-                
-                var scrollvalue = convert.$('.dris-25-test .ss-slidebout-button.ss-isMobile').offset().top;;
-                convert.$(window).scroll(function () {
-                  if ((convert.$(window).scrollTop() - scrollvalue) > 10) {
-                    convert.$('.page-wrapper .page-header .sticky-options-wrap').show();
-                  } else {
-                    convert.$('.page-wrapper .page-header .sticky-options-wrap').hide();
-                  }
-                });
-              } else {
-                convert.$('.page-wrapper .page-header .sticky-options-wrap').remove();
-              }
-            }
+          let media ={
+            tablet: "799px",
+            phablet: "600px",
+            mobile: '500px',
+            xtraSmall: '375px',
           }
+
+          if (window.matchMedia("(max-width: 799px)").matches) {
+            let stickyCTA = `<div class="sticky-cta-container hide"><button>Save + Get Instant Access Today</button> </div>`;
+            
+            let scrollvalue = 0;
+            const handleView = (value)=>{
+              $(window).scroll(function () {
+                if ((jQuery(window).scrollTop() - scrollvalue) > value) {
+                  $('.sc-3-test .sticky-cta-container').removeClass('hide');
+                }else{$('.sc-3-test .sticky-cta-container').addClass('hide');}
+              });
+            }
+
+            let href = window.location.href;
+            if(href.indexOf("/product") !== -1){
+              convert.$('body').append(stickyCTA);
+              if(window.matchMedia(`(max-width: ${media.tablet}`).matches)handleView(670);
+              if(window.matchMedia(`(max-width: ${media.phablet}`).matches)handleView(580);
+              if(window.matchMedia(`(max-width: ${media.mobile}`).matches)handleView(680);
+              if(window.matchMedia(`(max-width: ${media.xtraSmall}`).matches)handleView(830);
+              $(`.sticky-cta-container button`).click(function () {window.location = "https://scholistico.com/step/naturopathy-course/"});
+            }
+        }
         };
 
         if (!convert.$("body").hasClass(testInfo.className)) {

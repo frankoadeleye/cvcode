@@ -56,7 +56,6 @@
           convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product").append(BoxContainer);
 
           if (currentPrice) {
-            convert.$(".page-wrapper .product-media-and-info .product-info-main .product-info-price .old-price span.price-wrapper span.price").remove();
             convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product .buy-now-box .price-section span:first-child" ).append(currentPrice);
           }
 
@@ -64,6 +63,10 @@
 
           if (discount) {convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product .buy-now-box .discount").append(`You save: ${discount}`);
           }
+
+          let rating = convert.$(`.page-wrapper .page-main .product-info-main .product-reviews-summary`);
+
+          convert.$(rating).insertBefore(`.page-wrapper .page-main .product-info-main .buy-now-box`);
         
           waitForElement(".page-wrapper .product-media-and-info .product-info-main .affirm-as-low-as .affirm-ala-price"
           ).then((element) => { convert.$(".page-wrapper .product-media-and-info .product-info-main .page-title-wrapper.product .pay-monthly-box .price-section span:first-child").append(`${element.textContent}/MO`);
