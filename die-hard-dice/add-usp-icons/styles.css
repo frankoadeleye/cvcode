@@ -5,7 +5,8 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: -30px;
+  margin-top: -20px !important;
+  padding-bottom: 30px !important;
 }
 
 .dhd-22-test
