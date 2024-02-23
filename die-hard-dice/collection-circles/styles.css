@@ -20,10 +20,10 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   padding: 10px 0px;
-  border: 2px solid #000000;
+  border-top: 1px solid #000000;
   margin-bottom: 3px;
-  -webkit-box-shadow: 0 12px 6px -6px #808080;
-  box-shadow: 0 12px 6px -6px #808080;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   gap: 40px;
   z-index: 99;
 }

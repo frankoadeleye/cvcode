@@ -52,6 +52,12 @@
   max-width: 150px;
 }
 
+.dhd-22-test
+  .shopify-section
+  #collection-utilities.sticky-top.show .usp-icons-container{
+      display: none;
+  }
+
 @media (max-width: 500px) {
   .dhd-22-test
     .shopify-section
@@ -59,6 +65,15 @@
     .usp-icons-container
     .usp-icon-item {
     padding: 10px 10px;
+  }
+  
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item .text {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
 
