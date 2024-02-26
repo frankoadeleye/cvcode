@@ -1,0 +1,95 @@
+.rg-27-test .flex-good .good-column-inner .good-inner .good-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rg-27-test .flex-good .good-column-inner .good-inner .good-img .servings-btn {
+  border: 4px solid #60B251;
+  width: 120px;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px !important;
+  margin-bottom: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  outline-style: none;
+  background: #60B251;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+@media(max-width: 767px){
+	.rg-27-test .flex-good .good-column .good-column-inner .good-top{
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	gap: 10px;
+}
+
+.rg-27-test .flex-good .good-column .good-column-inner .good-top .servings-btn{
+  border: 4px solid #60B251;
+  width: 90px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  outline-style: none;
+  background: #60B251;
+  color: #ffffff;
+  font-family: inherit;
+}
+}
+
+@media (max-width: 600px){
+	.rg-27-test .flex-good .good-column .good-column-inner .good-top .servings-btn{
+  border: 4px solid #60B251;
+  width: 80px;
+  height: 22px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  outline-style: none;
+  background: #60B251;
+  color: #ffffff;
+  font-family: inherit;
+}
+}
