@@ -46,7 +46,7 @@
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	gap: 10px;
+	gap: 0px;
 }
 
 .rg-27-test .flex-good .good-column .good-column-inner .good-top .servings-btn{
@@ -91,5 +91,20 @@
   background: #60B251;
   color: #ffffff;
   font-family: inherit;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
+}
+
+@media (max-width: 375px){
+	.rg-27-test .flex-good .good-column .good-column-inner .good-top .servings-btn{
+		width: 62px;
+  height: 16px;
+  font-size: 7px;
+	}
+	
+	.rg-27-test .flex-good .good-column .good-column-inner .good-top p{
+		margin-bottom: 5px;
+	}
+	
 }
