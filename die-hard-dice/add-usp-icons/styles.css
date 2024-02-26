@@ -54,42 +54,63 @@
 
 .dhd-22-test
   .shopify-section
-  #collection-utilities.sticky-top.show .usp-icons-container{
-  	display: none;
-  }
+  #collection-utilities.sticky-top.show
+  .usp-icons-container {
+  display: none;
+}
 
 @media (max-width: 500px) {
-	
-	.dhd-22-test
+  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 10px !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    padding: 0px 10px !important;
+  }
+  .dhd-22-test
     .shopify-section
     #collection-utilities
-    .usp-icons-container{
-    	margin: 0px 5px !important;
-    }
-  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item {
+    .usp-icons-container
+    .usp-icon-item {
     padding: 0px 5px;
-    gap: 0!important;
+    gap: 0 !important;
   }
-  
-  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item .text{
-  	padding: 0px !important;
-  	font-size: 12px !important;
+
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item
+    .text {
+    padding: 0px !important;
+    font-size: 12px !important;
   }
 }
 
 @media (max-width: 420px) {
+  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container {
+    padding: 0px 5px !important;
+  }
   .dhd-22-test
     .shopify-section
     #collection-utilities
     .usp-icons-container
     .usp-icon-item {
     padding: 5px 0px;
+    width: 80px;
   }
-  
-  .dhd-22-test .shopify-section #collection-utilities .usp-icons-container .usp-icon-item{
-  	gap: 0px !important;
-  	-webkit-box-sizing: border-box;
-  	        box-sizing: border-box;
+
+  .dhd-22-test
+    .shopify-section
+    #collection-utilities
+    .usp-icons-container
+    .usp-icon-item {
+    gap: 0px !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
