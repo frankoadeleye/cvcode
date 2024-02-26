@@ -1,69 +1,33 @@
-/*.sc-3-test div#fc_frame.fc-widget-normal.fc-mobile-view{*/
-/*	margin-bottom: 40px;*/
-/*}*/
-
-/*.sc-3-test .sticky-cta-container{*/
-/*  position: sticky;*/
-/*  bottom: 0;*/
-/*  width: 100%;*/
-/*  padding: 5px 0px 10px 0px;*/
-/*  background: #f2f2ef;*/
-/*  display: -webkit-box;*/
-/*  display: -ms-flexbox;*/
-/*  display: flex;*/
-/*  -webkit-box-align: center;*/
-/*      -ms-flex-align: center;*/
-/*          align-items: center;*/
-/*  -webkit-box-pack: center;*/
-/*      -ms-flex-pack: center;*/
-/*          justify-content: center;*/
-/*}*/
-
-/*.sc-3-test .sticky-cta-container button{*/
-/*  outline-style: none;*/
-/*  border: 1px solid #364a15;*/
-/*  background: #364a15;*/
-/*  color: #ffffff;*/
-/*  -webkit-box-sizing: border-box;*/
-/*          box-sizing: border-box;*/
-/*  font-family: "Jost", sans-serif;*/
-/*  text-transform: capitalize;*/
-/*}*/
-
-/*.sc-3-test .sticky-cta-container button:focus{*/
-/*  background: transparent;*/
-/*  border:2px solid #364a15;*/
-/*  color: #364a15;*/
-/*}*/
-
-/*.sc-3-test .sticky-cta-container.hide{*/
-/*  display: none;*/
-/*}*/
-
-/*.sc-3-test .container .elementor-section-wrap .elementor-container .elementor-button-wrapper{*/
-	/*border: 5px solid red;*/
-/*}*/
-
 .sc-3-test.sticky-nav .elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button-wrapper:first-child{
-	/*border: 6px solid yellow;*/
 	left: 0;
     position: fixed;
     bottom: 0;
-    /* height: 20px; */
     width: 100%;
     z-index: 24;
     margin: 20px auto 0;
-    background: red;
-   padding:20px;
+    background: #f2f2ef;;
+   padding:10px;
 }
 
-/*.sc-3-test.sticky-nav .elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button:first-child{*/
-/*	max-width: 80%;*/
-/*	margin: auto;*/
-/*}*/
+.sc-3-test.sticky-nav .elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button{
+	height: 40px;
+}
 
-/*.sc-3-test.sticky-nav .elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button-container{*/
-/*	background: #364a15;*/
-/*	box-sizing: border-box;*/
-/*	width: 100%;*/
-/*}*/
+.sc-3-test.sticky-nav .elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button-text{
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-box-align: center !important;
+	    -ms-flex-align: center !important;
+	        align-items: center !important;;
+	-webkit-box-pack: center !important;;
+	    -ms-flex-pack: center !important;;
+	        justify-content: center !important;;
+	text-align: center;
+	position: relative;
+	top: -4px !important;
+}
+
+.sc-3-test.sticky-nav div#fc_frame.fc-widget-normal.fc-mobile-view{
+	margin-bottom: 50px;
+}

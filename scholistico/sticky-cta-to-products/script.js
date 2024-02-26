@@ -41,75 +41,24 @@
         };
 
         const loadTest = () => {
-          let media = {
-            tablet: "799px",
-            phablet: "600px",
-            mobile: "500px",
-            xtraSmall: "375px",
-          };
-
-          if (window.matchMedia("(max-width: 799px)").matches) {
-            let stickyCTA = `<div class="sticky-cta-container hide"><button>Save + Get Instant Access Today</button> </div>`;
-
-            let scrollvalue = 0;
-            const handleView = (value) => {
-              $(window).scroll(function () {
-                if (jQuery(window).scrollTop() - scrollvalue > value) {
-                  $(".sc-3-test .sticky-cta-container").removeClass("hide");
-                } else {
-                  $(".sc-3-test .sticky-cta-container").addClass("hide");
-                }
-              });
-            };
-            //
-
-            /*
-
-            window.addEventListener('scroll', function(e) {
-              var fixTop = document.querySelector('.container .elementor-section-wrap .elementor-container .elementor-button-wrapper').offsetTop;
-
-              var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-              if (currentScroll >= fixTop) {
-                document.body.classList.add('sticky-nav');
-              } else {
-                document.body.classList.remove('sticky-nav');
-              }
-            });
-
-            */
-
-            var fixTop = jQuery(
+         if (window.matchMedia("(max-width: 799px)").matches) {
+             var fixTop = jQuery(
               '.elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button:first'
             ).offset().top;
 
-            jQuery(window).scroll(function (e) {
-              console.log(e);
-              var currentScroll = jQuery(window).scrollTop();
-              if (currentScroll >= fixTop) {
-                jQuery("body").addClass("sticky-nav");
-              } else {
-                jQuery("body").removeClass("sticky-nav");
-              }
-            });
-
-            /*
             let href = window.location.href;
             if (href.indexOf("/product") !== -1) {
-              convert.$("body").append(stickyCTA);
-              if (window.matchMedia(`(max-width: ${media.tablet}`).matches)
-                handleView(670);
-              if (window.matchMedia(`(max-width: ${media.phablet}`).matches)
-                handleView(580);
-              if (window.matchMedia(`(max-width: ${media.mobile}`).matches)
-                handleView(680);
-              if (window.matchMedia(`(max-width: ${media.xtraSmall}`).matches)
-                handleView(830);
-              $(`.sticky-cta-container button`).click(function () {
-                window.location =
-                  "https://scholistico.com/step/naturopathy-course/";
+
+            jQuery(window).scroll(function (e) {
+              var currentScroll = jQuery(window).scrollTop();
+                if (currentScroll >= fixTop) {
+                  jQuery("body").addClass("sticky-nav");
+                  jQuery(`.elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button-text`).text('Save + Get Instant Access Today');
+                } else {
+                  jQuery("body").removeClass("sticky-nav");
+                }
               });
             }
-            */
           }
         };
 
@@ -121,3 +70,5 @@
     }
   });
 })();
+
+jQuery(`.elementor-widget-wrap > div.elementor-widget-button[data-widget_type="button.default"].elementor-mobile-align-center .elementor-button-text`)
