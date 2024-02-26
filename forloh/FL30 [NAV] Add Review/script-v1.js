@@ -43,17 +43,7 @@
         const loadTest = () => {
          let navCustomerReview = `<div class="nav-customer-review">
               <img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/stars-fl.png" alt="review-stars" class="stars" />
-              <p class="review">“I just love my new Airlite jacket. 
-              It's perfect for a chilly, foggy morning on the water in South Louisiana. 
-              And it's made in the USA!!!”</p>
-              <div class="reviewer">
-                <img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer-fl.png" alt="" class="avatar" />
-                <div class="details">
-                  <div class="name">Daniel L, Louisiana
-                  </div>
-                  <div class="status"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/verify-logo-fl.png" alt="" class="check" />Verified Customer Review</div>
-                </div>
-              </div>
+              <p class="review">“I just love my new Airlite jacket. It's perfect for a chilly, foggy morning on the water in South Louisiana. And it's made in the USA!!!”</p><div class="reviewer"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/reviewer-fl.png" alt="" class="avatar" /><div class="details"><div class="name">Daniel L, Louisiana </div><div class="status"><img src="https://cdn-3.convertexperiments.com/uf/1004931/10041718/verify-logo-fl.png" alt="" class="check" />Verified Customer Review</div></div> </div>
          </div>`;
 
          convert.$(`.page-container .transition-body .drawer .drawer__contents   .drawer__scrollable`).append(navCustomerReview);
