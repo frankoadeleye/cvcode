@@ -1,0 +1,44 @@
+.rg-29-test .section-wrapper .dw-topper .dw-top-text .font48.thetop {
+  font-size: 20px;
+}
+
+.rg-29-test .section-wrapper .dw-topper .dw-top-text .Sub-title {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.rg-29-test .section-wrapper .dw-topper .dw-top-text .themid {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .font48.thetop {
+    font-size: 16px !important;
+  }
+
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .Sub-title {
+    font-size: 18px !important;
+  }
+
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .themid {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .Sub-title {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .themid {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .rg-29-test .section-wrapper .dw-topper .dw-top-text .themid {
+    font-size: 12px !important;
+    line-height: 18px;
+  }
+}
