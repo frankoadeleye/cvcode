@@ -1,0 +1,149 @@
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 40px 50px 40px;
+  border-top: 2px solid #FFFFFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .review{
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .stars{
+  width: 83px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .avatar{
+  width: 45px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .name{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .status{
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .check{
+  width: 14px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width:375px){
+
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 30px 50px 30px;
+  }
+  
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+}
+
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .avatar{
+    width: 40px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .review{
+    font-size: 14px;
+  }
+
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .name{
+    font-size: 12px;
+   }
+
+   .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .status{
+    font-size: 11px;
+    }
+}
