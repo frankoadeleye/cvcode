@@ -44,11 +44,13 @@
           let servings = ['5 servings','28 servings','28 servings']
           let href = window.location.href;
           let servingsBtn = (amount)=> `<button class="servings-btn">${amount}</button>`;
-          if (window.matchMedia("(max-width: 767px)").matches && href.indexOf(`/pages/risk-free-trial-new`) > -1) {
-            jQuery('.flex-good .good-column .good-column-inner .good-top').each(function (index) {jQuery(this).append(servingsBtn(servings[index]));});
-          }else{
-            jQuery('.flex-good .good-column .good-column-inner .good-inner .good-img').each(function (index) {jQuery(this).append(servingsBtn(servings[index]));
-            });
+          if(href.indexOf(`/pages/risk-free-trial-new`) > -1){
+            if (window.matchMedia("(max-width: 767px)").matches) {
+              jQuery('.flex-good .good-column .good-column-inner .good-top').each(function (index) {jQuery(this).append(servingsBtn(servings[index]));});
+            }else{
+              jQuery('.flex-good .good-column .good-column-inner .good-inner .good-img').each(function (index) {jQuery(this).append(servingsBtn(servings[index]));
+              });
+            }
           }
         }
 
