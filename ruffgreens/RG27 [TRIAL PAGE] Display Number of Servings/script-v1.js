@@ -41,7 +41,7 @@
         };
 
         const loadTest = () => {
-          let servings = ['5 servings','28 servings','28 servings']
+          let servings = ['5 Servings','28 Servings','28 Servings']
           let href = window.location.href;
           let servingsBtn = (amount)=> `<button class="servings-btn">${amount}</button>`;
           if(href.indexOf(`/pages/risk-free-trial-new`) > -1){
