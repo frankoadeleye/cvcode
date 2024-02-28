@@ -49,7 +49,9 @@
                 convert.$('html').addClass('js supports-touch crjs js-drawer-open js-drawer-open--search lock-scroll');
                 convert.$('.page-container .header-wrapper .site-header__search-container').addClass('is-active');
                 convert.$('.page-container .header-wrapper .site-header__search-container').attr('tabindex','-1');
+                convert.$('.page-container .header-wrapper .site-header__search-container form input[placeholder="Search our store"]').focus();
               });
+              convert.$('.page-container .header-wrapper .site-header__search-container form input[placeholder="Search our store"]').change(()=> {convert.$(".page-container .header-item.header-item--icons .site-nav__icons .search-wrapper .search-bar").val(convert.$('.page-container .header-wrapper .site-header__search-container form input[placeholder="Search our store"]').val())});
            }
         };
 
