@@ -123,7 +123,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0px;
+  gap: 2px;
 }
 
   .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .avatar{
@@ -134,16 +134,4 @@
     -o-object-position: center;
        object-position: center;
   }
-
-  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .review{
-    font-size: 14px;
-  }
-
-  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .name{
-    font-size: 12px;
-   }
-
-   .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .nav-customer-review .reviewer .details .status{
-    font-size: 11px;
-    }
 }

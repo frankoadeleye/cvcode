@@ -1,9 +1,9 @@
 (() => {
   "use strict";
   const testInfo = {
-    className: "rg-29-test",
+    className: "ae-1-test",
     debug: 0,
-    testName: "short-copy-ATF",
+    testName: "rearrange-collections-tiles",
     testVersion: "0.0.1",
   };
   const convertInterval = setInterval(() => {
@@ -41,14 +41,13 @@
         };
 
         const loadTest = () => {
-          if(window.location.pathname == "/"){
-            convert.$(`.section-wrapper .dw-topper .dw-top-text .font48.thetop`).text('TRY RUFFGREENS FOR FREE');
-            convert.$(`.section-wrapper .dw-topper .dw-top-text .Sub-title`).html(`The <span class="lg fattest">#1 Food Supplement</span> For Dogs`);
-            convert.$(`.section-wrapper .dw-topper .dw-top-text .themid`).html(`<p class="themid  ">Improve your dog's skin, coat, digestion, energy, and joint mobility in <strong>one easy scoop per day</strong>. <span>SOURCED AND MADE IN USA with Live Vitamins, Minerals, Probiotics, Digestive Enzymes, Omega Oils and Anti-Oxidants all in a delicious blend that Dogs Love.</span></p>`);
-          }
-        }
-          
-        if (!convert.$("body").hasClass(testInfo.className)) {
+        	let PantsAndJeans = convert.$(`.page-container .main-content .shopify-section .promo-grid .flex-grid .flex-grid__item:has(> .promo-grid__container > a[aria-label="Shop Pants & Jeans"]`);
+        	let TeesHenleysAndPolos = convert.$(`.page-container .main-content .shopify-section .promo-grid .flex-grid .flex-grid__item:has(> .promo-grid__container > a[aria-label="Shop Tees, Henleys, & Polos"]`);
+          convert.$(`.page-container .main-content .shopify-section .promo-grid .flex-grid`).prepend(PantsAndJeans);
+          convert.$(TeesHenleysAndPolos).insertAfter(`.page-container .main-content .shopify-section .promo-grid .flex-grid .flex-grid__item:has(> .promo-grid__container > a[aria-label="Shop New Loungewear"]`);
+        };
+
+        if (!convert.$("body").hasClass(testInfo.className) && window.matchMedia("(max-width: 768px)").matches && window.location.pathname == "/") {
           convert.$("body").addClass(testInfo.className);
           loadTest();
         }

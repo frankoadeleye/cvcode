@@ -1,75 +1,68 @@
-.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote{
+.fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 30px 50px 30px;
-  border-top: 2px solid #FFFFFF;
+  padding: 15px 0px 50px 0px !important;
+  border-top: 2px solid #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote .title{
+.fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 5px !important;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Lato,sans-serif;
+  font-size: 20px;
   text-transform: capitalize;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
 }
-
-.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote .title img{
+.fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote .title img {
   width: 48px;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center
 }
-
-.fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote .review{
+.fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote .review {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
+  padding: 0px 20px !important;
 }
-
-@media (max-width:375px){
-  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote{
+@media (max-width:375px) {
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px 20px 50px 25px;
   }
   
-  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote .title{
-  	font-size: 16px;
+  .fl-30-test .page-container .transition-body .drawer .drawer__contents .drawer__scrollable .guarantee-quote .review{
+  	 padding: 0px 5px !important;
   }
-
-  .fl-30-test .page-container .transition-body .drawer .drawer__contents   .drawer__scrollable .guarantee-quote .review{
-    font-size: 14px;
-  }
-  
 }

@@ -1,0 +1,81 @@
+.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .marg0{
+	margin-top: 20px;
+}
+
+.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 5px;
+	color: #2D1E12;
+}
+
+.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item span:first-child{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item span:last-child{
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 1024px){
+  .rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item span:first-child{
+    font-size: 16px;
+  }
+  
+  .rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item span:last-child{
+    font-size: 14px;
+  }
+  
+  .rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item{
+    gap: 0px !important;
+  }
+}
+
+@media (max-width: 700px){
+	.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section{
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	
+	.rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section .item span{
+		text-align: center !important;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+	  .rg-28-test .section-wrapper .dw-topper .new-homepage .dw-top-text .usp-section{
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  gap: 15px;
+    }
+}
